@@ -13,8 +13,17 @@ const Navbar = () => {
 
   return (
     <div className="bg-tertiary flex flex-row h-1/6 items-center justify-between">
-      <div className="m-[1rem]">
-        <img className="h-[4rem]" src="../../src/assets/Logo.ico" alt="Logo" />
+      <div className="m-[1rem] flex flex-row items-center gap-2">
+        <img className="h-[5rem] logo-e" src="../../src/assets/Logo.ico" alt="Logo" />
+        <div className="flex flex-col justify-center">
+          <h1 className="text-white text-xl cssh1 font-bold text-center">
+            Eliana Guarino
+          </h1>
+          <h2 className="text-white text-xs mt-[0.2rem]">
+            Developer Full-Stack MERN
+          </h2>
+          <h2 className="text-white text-xs text-center">& Mobile</h2>
+        </div>
       </div>
       <div className="flex gap-5 mr-10 flex-row items-center">
         <Link className="text-white text-xl" to="/">
@@ -54,7 +63,7 @@ const Navbar = () => {
             />
           )}
         </div>
-        </div>
+      </div>
     </div>
   );
 };

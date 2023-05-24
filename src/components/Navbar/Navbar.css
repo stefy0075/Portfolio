@@ -1,3 +1,8 @@
-.nav{
-    height: 30%;
+@media (min-width: 426px) and (max-width: 768px ){
+    .logo-e{
+        height: 2rem;
+    }
+    .cssh1{
+        font-size: 14px;
+    }
 }
