@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'home': "url('./src/assets/side.png')"
+      },
       colors: {
         primary: '#000f7d',
         secondary: '#f4f6fc',
