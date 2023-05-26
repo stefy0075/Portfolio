@@ -6,5 +6,15 @@
   "contact": "Contacto",
   "skills": "Habilidades",
   "titleHome": "Mi Portafolio",
-  "presentation": "Como desarrolladora Full-Stack especializada en MERN (MongoDB, Express, React y Node.js) y aplicaciones móviles, busco constantemente mejorar mis habilidades y mantenerme actualizada con las últimas tecnologías. Mi enfoque se centra en garantizar la excelencia en cada proyecto y asegurar la calidad en los productos finales. Gracias a mi capacidad para analizar y comprender las necesidades del cliente, puedo ofrecer soluciones personalizadas y adaptadas a cada desafío. Me enorgullece desarrollar soluciones innovadoras y de alta calidad que superen las expectativas de los clientes."
+  "presentation": "Como desarrolladora Full-Stack especializada en MERN (MongoDB, Express, React y Node.js) y aplicaciones móviles, busco constantemente mejorar mis habilidades y mantenerme actualizada con las últimas tecnologías. Mi enfoque se centra en garantizar la excelencia en cada proyecto y asegurar la calidad en los productos finales. Gracias a mi capacidad para analizar y comprender las necesidades del cliente, puedo ofrecer soluciones personalizadas y adaptadas a cada desafío. Me enorgullece desarrollar soluciones innovadoras y de alta calidad que superen las expectativas de los clientes.",
+  "subtitleHome": "¡Potencia tu éxito con soluciones a medida!",
+  "descriptionHome": "Puedo ofrecerte una amplia gama de servicios personalizados que se adaptan a tus necesidades. Aquí hay algunas formas en las que puedo contribuir a tu éxito:",
+  "solutions": [
+    "Desarrollo web y móvil: Creación de sitios web, aplicaciones móviles, y plataformas de comercio electrónico.",
+    "Diseño atractivo: Interfaces modernas y agradables que mejoran la experiencia del usuario.",
+    "Optimización de rendimiento: Mejora de velocidad y eficiencia para un óptimo rendimiento.",
+    "Integración de API: Conexión con servicios externos para ampliar la funcionalidad.",
+    "Mantenimiento y soporte: Asistencia técnica, actualizaciones y mejoras continuas."
+  ],
+  "descriptionHomeFinal": "Estoy comprometida en superar tus expectativas y en ofrecerte soluciones tecnológicas innovadoras y de alta calidad. ¡Trabajemos juntos para llevar tu visión al siguiente nivel!"
 }

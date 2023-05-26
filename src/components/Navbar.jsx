@@ -33,16 +33,16 @@ const Navbar = () => {
           <Link className="text-white text-xl" to="/">
             {t("home")}
           </Link>
-          <Link className="text-white text-xl" to="/">
+          <Link className="text-white text-xl" to="/about-as">
             {t("about")}
           </Link>
-          <Link className="text-white text-xl" to="/">
+          <Link className="text-white text-xl" to="/proyects">
             {t("projects")}
           </Link>
-          <Link className="text-white text-xl" to="/">
+          <Link className="text-white text-xl" to="/contact">
             {t("contact")}
           </Link>
-          <Link className="text-white text-xl" to="/">
+          <Link className="text-white text-xl" to="/skills">
             {t("skills")}
           </Link>
           <div className="flex items-center ml-[2rem]">

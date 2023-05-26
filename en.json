@@ -6,5 +6,14 @@
   "contact": "Contact",
   "skills": "Skills",
   "titleHome": "My Portfolio",
-  "presentation": "As a Full-Stack developer specialized in MERN (MongoDB, Express, React and Node.js) and mobile applications, I am constantly looking to improve my skills and keep myself updated with the latest technologies. My focus is on guaranteeing excellence in every project and ensuring quality in the final products. Thanks to my ability to analyze and understand the client's needs, I am able to provide solutions tailored to each challenge. I take pride in developing innovative and high quality solutions that exceed customer expectations."
+  "presentation": "As a Full-Stack developer specialized in MERN (MongoDB, Express, React and Node.js) and mobile applications, I am constantly looking to improve my skills and keep myself updated with the latest technologies. My focus is on guaranteeing excellence in every project and ensuring quality in the final products. Thanks to my ability to analyze and understand the client's needs, I am able to provide solutions tailored to each challenge. I take pride in developing innovative and high quality solutions that exceed customer expectations.",
+  "subtitleHome": "Power your success with customized solutions!",
+  "solutions": [
+    "Web and mobile development: creation of websites, mobile applications, and e-commerce platforms.",
+    "Attractive design: Modern and pleasant interfaces that improve the user experience.",
+    "Performance Optimization: Improving speed and efficiency for optimal performance.",
+    "API integration: Connection with external services to extend functionality.",
+    "Maintenance and support: Technical assistance, upgrades and continuous improvements."
+  ],
+  "descriptionHomeFinal": "I am committed to exceeding your expectations and providing you with innovative, high quality technology solutions. Let's work together to take your vision to the next level!"
 }

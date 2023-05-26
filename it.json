@@ -6,5 +6,15 @@
   "contact": " Contatto",
   "skills": "competenze",
   "titleHome": "Il mio Portafoglio",
-  "presentation": "Come sviluppatore Full-Stack specializzato in MERN (MongoDB, Express, React e Node.js) e applicazioni mobili, cerco costantemente di migliorare le mie competenze e di tenermi aggiornato sulle ultime tecnologie. Il mio obiettivo è garantire l'eccellenza in ogni progetto e assicurare la qualità dei prodotti finali. Grazie alla mia capacità di analizzare e comprendere le esigenze del cliente, sono in grado di offrire soluzioni personalizzate adatte a ogni sfida. Sono orgoglioso di sviluppare soluzioni innovative e di alta qualità che superano le aspettative dei clienti"
+  "presentation": "Come sviluppatore Full-Stack specializzato in MERN (MongoDB, Express, React e Node.js) e applicazioni mobili, cerco costantemente di migliorare le mie competenze e di tenermi aggiornato sulle ultime tecnologie. Il mio obiettivo è garantire l'eccellenza in ogni progetto e assicurare la qualità dei prodotti finali. Grazie alla mia capacità di analizzare e comprendere le esigenze del cliente, sono in grado di offrire soluzioni personalizzate adatte a ogni sfida. Sono orgoglioso di sviluppare soluzioni innovative e di alta qualità che superano le aspettative dei clienti",
+  "subtitleHome": "Date forza al vostro successo con soluzioni su misura!",
+  "solutions": [
+    "Sviluppo web e mobile: creazione di siti web, applicazioni mobili e piattaforme di e-commerce.",
+    "Design accattivante: interfacce moderne e piacevoli che migliorano l'esperienza dell'utente.",
+    "Ottimizzazione delle prestazioni: miglioramento della velocità e dell'efficienza per prestazioni ottimali",
+    "Integrazione API: connessione con servizi esterni per estendere le funzionalità.",
+    "Manutenzione e supporto: assistenza tecnica, aggiornamenti e miglioramenti continui."
+  ],
+  "descriptionHomeFinal": "Mi impegno a superare le vostre aspettative e a fornirvi soluzioni tecnologiche innovative e di alta qualità. Lavoriamo insieme per portare la vostra visione al livello successivo!"
+
 }
