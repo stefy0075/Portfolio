@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
-      <div className="h-4/5 bg-quaternary flex flex-row justify-around items-center bg-home bg-center bg-cover bg-no-repeat ">
+      <div className="min-h-screen bg-quaternary flex flex-row justify-around items-center bg-home bg-center bg-cover bg-no-repeat ">
         <div className="text-black h-[100%] w-[50%]  flex flex-col justify-around items-center ">
-          <h1 className="text-white font-bold text-5xl text-center ml-[2rem] mr-[2rem]">{t("titleHome")} </h1>
+          <h1 className="text-white font-bold text-5xl text-center m-[2rem]">{t("titleHome")} </h1>
           <h2 className="text-white  text-2xl ml-[3rem] mr-[2rem] leading-9 text-justify tracking-wide ">
             {t("presentation")}
           </h2>
