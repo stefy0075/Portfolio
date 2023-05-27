@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'home': "url('./src/assets/side.png')"
+        'home': "url('./src/assets/side.png')",
+        'contact': "url('./src/assets/contact.png')"
       },
       colors: {
         primary: '#000f7d',
@@ -16,7 +17,7 @@ export default {
         quaternary: '#2d0085',
         quintary: '#7957BC',
         sextary: '#233dff',
-        septenary: '#',
+        septenary: '#BCCEF7',
         octary: '#',
         nonary: '#',
         decennial: '#'
