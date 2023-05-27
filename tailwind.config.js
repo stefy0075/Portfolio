@@ -8,7 +8,9 @@ export default {
     extend: {
       backgroundImage:{
         'home': "url('./src/assets/side.png')",
-        'contact': "url('./src/assets/contact.png')"
+        'contacts': "url('./src/assets/contact.png')",
+        'about-as': "url('./src/assets/about-as.png')",
+        'proyects': "url('./src/assets/proyects.png')"
       },
       colors: {
         primary: '#000f7d',

@@ -3,6 +3,8 @@ import App from "./src/pages/Home";
 import Layout from "./src/Layout/Layout";
 import AboutAs from "./src/pages/AboutAs";
 import ContactForm from "./src/pages/Contacts";
+import Proyects from "./src/pages/Proyects";
+
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/proyects",
-        element: <AboutAs />,
+        element: <Proyects />,
       },
       {
         path: "/skills",

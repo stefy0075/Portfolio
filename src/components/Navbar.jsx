@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="bg-tertiary flex flex-row h-1/6 items-center justify-between ">
         <div className="m-[1rem] flex flex-row items-center gap-2">
           <img
-            className="h-[5rem] logo-e"
+            className="h-[5em] logo-e"
             src="../../src/assets/Logo.ico"
             alt="Logo"
           />

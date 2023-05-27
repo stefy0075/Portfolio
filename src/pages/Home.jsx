@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <div className="min-h-[100vw]">
-        <div className="min-h-screen bg-quaternary flex flex-row justify-around items-center bg-home bg-center bg-cover bg-no-repeat ">
+        <div className="min-h-screen bg-quaternary flex flex-row flex-wrap justify-around items-center bg-home bg-center bg-cover bg-no-repeat ">
           <div className="text-black h-[100%] w-[50%]  flex flex-col justify-around items-center ">
             <h1 className="text-white font-bold text-5xl text-center m-[2rem]">
-              {t("titleHome")}{" "}
+              {t("titleHome")}
             </h1>
             <h2 className="text-white  text-2xl ml-[3rem] mr-[2rem] leading-9 text-justify tracking-wide ">
               {t("presentation")}
@@ -21,7 +21,7 @@ function App() {
             <GraficComputer />
           </div>
         </div>
-        <div className="min-h-[100vw] flex flex-col bg-quaternary ">
+        <div className="min-h-[100vw] flex flex-col bg-quaternary flex-wrap ">
           <div className="flex flex-row bg-quaternary">
             <div className="w-[45%] h-[100vh] mt-[15%] pt-[5%] pl-[3%] pr-[3%] pb-[3%] flex items-center">
               <Grafic2 />
