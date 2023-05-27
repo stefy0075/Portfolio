@@ -18,8 +18,8 @@ export default {
         quintary: '#7957BC',
         sextary: '#233dff',
         septenary: '#BCCEF7',
-        octary: '#',
-        nonary: '#',
+        octary: '#46326E',
+        nonary: '#DCCAFF',
         decennial: '#'
       },
     },
