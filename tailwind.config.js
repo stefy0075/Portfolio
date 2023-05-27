@@ -15,7 +15,7 @@ export default {
         tertiary: '#050a30',
         quaternary: '#2d0085',
         quintary: '#7957BC',
-        sextary: '#',
+        sextary: '#233dff',
         septenary: '#',
         octary: '#',
         nonary: '#',

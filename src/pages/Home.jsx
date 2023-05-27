@@ -21,27 +21,32 @@ function App() {
             <GraficComputer />
           </div>
         </div>
-        <div className="min-h-[100vw] flex flex-row bg-quaternary ">
-          <div className="w-[40%] h-[100vh] mt-[5%] pt-[5%] pl-[3%] pr-[3%] pb-[3%] flex items-center">
-            <Grafic2 />
+        <div className="min-h-[100vw] flex flex-col bg-quaternary ">
+          <div className="flex flex-row bg-quaternary border ">
+            <div className="w-[45%] h-[100vh] mt-[15%] pt-[5%] pl-[3%] pr-[3%] pb-[3%] flex items-center">
+              <Grafic2 />
+            </div>
+            <div className="w-[55%] h-[100vh] p-[3%]">
+              <h2 className="text-white font-bold text-4xl text-center m-[1.5rem] pb-[1.5rem]">
+                {t("subtitleHome")}
+              </h2>
+              <p className="text-white text-2xl mt-[2.5rem] mb-[2.5rem]">
+                {t("descriptionHome")}
+              </p>
+              <ul className="list-disc text-white text-2xl">
+                {solutions.map((item, index) => (
+                  <li key={index} className="pl-4 mb-[0.7rem]">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-white text-2xl mt-[2.5rem] mb-[2.5rem]">
+                {t("descriptionHomeFinal")}
+              </p>
+            </div>
           </div>
-          <div className="w-[60%] h-[100vh] p-[3%]">
-            <h2 className="text-white font-bold text-4xl text-center m-[1.5rem] pb-[1.5rem]">
-              {t("subtitleHome")}
-            </h2>
-            <p className="text-white text-2xl mt-[2.5rem] mb-[2.5rem]">
-              {t("descriptionHome")}
-            </p>
-            <ul className="list-disc text-white text-2xl">
-              {solutions.map((item, index) => (
-                <li key={index} className="pl-4 mb-[0.7rem]">
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <p className="text-white text-2xl mt-[2.5rem] mb-[2.5rem]">
-              {t("descriptionHomeFinal")}
-            </p>
+          <div className="border h-[100%] w-[100%]">
+            <p className="text-white text-4xl">Section2</p>
           </div>
         </div>
       </div>
