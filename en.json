@@ -18,6 +18,12 @@
   ],
   "descriptionHomeFinal": "I am committed to exceeding your expectations and providing you with innovative, high quality technology solutions. Let's work together to take your vision to the next level!",
   "contactH1": "Contact me and let's make your project a reality!",
-  "contactDescription": "Complete the contact form below and I will get back to you as soon as possible. Your inquiry is important to me, and I am committed to providing you with excellent service. With my experience in web and mobile development, beautiful design, performance optimization, API integration, maintenance and support, I can offer you complete and reliable solutions. Don't wait any longer! Let me know how I can help you boost your success. I'm eager to work with you and bring your ideas to life. Together, we can create something amazing."
-
+  "contactDescription": "Complete the contact form below and I will get back to you as soon as possible. Your inquiry is important to me, and I am committed to providing you with excellent service. With my experience in web and mobile development, beautiful design, performance optimization, API integration, maintenance and support, I can offer you complete and reliable solutions. Don't wait any longer! Let me know how I can help you boost your success. I'm eager to work with you and bring your ideas to life. Together, we can create something amazing.",
+  "contactForm": {
+    "title": "Contact Form",
+    "name": "First name",
+    "email": "E-mail",
+    "mesaje": "Message",
+    "button": "Send"
+  }
 }

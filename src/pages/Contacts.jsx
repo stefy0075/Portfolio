@@ -6,20 +6,20 @@ const ContactForm = () => {
 
   return (
     <div className="bg-contact min-h-screen flex flex-row justify-around items-center bg-center bg-cover bg-no-repeat ">
-      <div className="w-[50%] h-[100%]">
-        <h1>{t('contactH1')} </h1>
-        <p>
+      <div className="w-[50%] h-[100vh] flex flex-col items-center justify-center  p-[5%]">
+        <h1 className="text-white font-bold text-4xl text-center m-[1.5rem] pb-[1.5rem]">{t('contactH1')} </h1>
+        <p className="text-white text-2xl mt-[2.5rem] mb-[2.5rem] tracking-wider text-justify">
         {t('contactDescription')}
         </p>
       </div>
       <div className="w-[50%] h-[100%]">
         <form className="max-w-lg mx-auto mt-8 p-4 bg-white rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4">
-            Formulario de Contacto
+          {t('contactForm.title')}
           </h2>
           <div className="mb-4">
             <label htmlFor="name" className="block font-medium mb-2">
-              Nombre
+              {t('contactForm.name')}
             </label>
             <input
               type="text"
@@ -31,7 +31,7 @@ const ContactForm = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="email" className="block font-medium mb-2">
-              Email
+              {t('contactForm.email')}
             </label>
             <input
               type="email"
@@ -43,7 +43,7 @@ const ContactForm = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="message" className="block font-medium mb-2">
-              Mensaje
+              {t('contactForm.mesaje')}
             </label>
             <textarea
               id="message"
@@ -57,7 +57,7 @@ const ContactForm = () => {
             type="submit"
             className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded"
           >
-            Enviar
+            {t('contactForm.button')}
           </button>
         </form>
       </div>
