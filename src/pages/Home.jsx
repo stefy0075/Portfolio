@@ -22,7 +22,7 @@ function App() {
           </div>
         </div>
         <div className="min-h-[100vw] flex flex-col bg-quaternary ">
-          <div className="flex flex-row bg-quaternary border ">
+          <div className="flex flex-row bg-quaternary">
             <div className="w-[45%] h-[100vh] mt-[15%] pt-[5%] pl-[3%] pr-[3%] pb-[3%] flex items-center">
               <Grafic2 />
             </div>
