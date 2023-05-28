@@ -3,7 +3,7 @@ const grafic2 = () => {
   return (
     <div className='h-[100%] w-[100%] flex items-center'>
       <svg xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 895.2732 761.1069"
+          viewBox="0 0 995.2732 761.1069"
           xmlSpace="preserve">
         <defs>
           <linearGradient
@@ -14,7 +14,7 @@ const grafic2 = () => {
             y2="151.04"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stopColor="#ff8538"></stop>
+            <stop offset="0" stopColor="#233dff"></stop>
             <stop offset="1" stopColor="#e9e9e9"></stop>
           </linearGradient>
           <linearGradient
@@ -48,7 +48,7 @@ const grafic2 = () => {
             gradientTransform="translate(201.54 490.13)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stopColor="#ff8538"></stop>
+            <stop offset="0" stopColor="#233dff"></stop>
             <stop offset="1" stopColor="#f5f5f5"></stop>
           </linearGradient>
           <linearGradient
@@ -68,7 +68,7 @@ const grafic2 = () => {
             y2="97.67"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stopColor="#ff8538"></stop>
+            <stop offset="0" stopColor="#233dff"></stop>
             <stop offset="1" stopColor="#bcbcbc"></stop>
           </linearGradient>
           <linearGradient
@@ -131,8 +131,8 @@ const grafic2 = () => {
             y2="173.2"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stopColor="#ff1d4b"></stop>
-            <stop offset="1" stopColor="#b93dfe"></stop>
+            <stop offset="0" stopColor="#6F00C7"></stop>
+            <stop offset="1" stopColor="#46326E"></stop>
           </linearGradient>
           <linearGradient
             id="linear-gradient-14"
@@ -722,11 +722,11 @@ const grafic2 = () => {
               ></path>
               <path
                 d="M384.4 173.82h0a7.23 7.23 0 0 0 4.6.18h0"
-                style={{strokeWidth: '3.75px', strokeLinejoin: 'round',stroke: '#ff8538', strokeLinecap: 'round', fill: 'none'}}
+                style={{strokeWidth: '3.75px', strokeLinejoin: 'round',stroke: '#E4C385', strokeLinecap: 'round', fill: 'none'}}
               ></path>
               <path
                 d="M379.15 183a12.64 12.64 0 0 0 12.64 12.64h0A12.64 12.64 0 0 0 404.43 183"
-                style={{stroke:'#ff2b50', strokeWidth:'3.75px', strokeMiterlimit: 10, strokeLinecap:'round', fill:'none'}}
+                style={{stroke:'#050a30', strokeWidth:'3.75px', strokeMiterlimit: 10, strokeLinecap:'round', fill:'none'}}
               ></path>
             </g>
             <path
@@ -1438,7 +1438,7 @@ const grafic2 = () => {
             ></path>
             <path
               d="M549.88 552.78h1.18a1.92 1.92 0 0 1 1.94 1.92v1.42a1.92 1.92 0 0 1-1.92 1.92h-1.18"
-              style={{stroke:'#e8e8e8', strokeWidth:'2.33px', strokeMiterlimit:10, strokeLinecap: 'round', fill:'none'}}
+              style={{stroke:'#46326E', strokeWidth:'2.33px', strokeMiterlimit:10, strokeLinecap: 'round', fill:'none'}}
             ></path>
             <path
               style={{fill: 'url(#linear-gradient-61)'}}
