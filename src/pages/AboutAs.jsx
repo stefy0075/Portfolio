@@ -11,6 +11,7 @@ function AboutAs() {
             src="../../src/assets/photo.png"
             alt="photo"
           />
+          
         </div>
         <div className="w-[60%] h-[100%] border">
           <h1 className="text-white text-2xl">{t("titleAbout")}</h1>
