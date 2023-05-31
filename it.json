@@ -26,5 +26,18 @@
     "mesaje": "Message",
     "button": "Invia"
   },
-  "aboutAs": "Sono uno sviluppatore full-stack MERN appassionato e organizzato, sempre alla ricerca di nuove sfide e opportunità di apprendimento e crescita. Il mio obiettivo principale è lo sviluppo web e mi appassiona lavorare in team per creare soluzioni innovative e di qualità. Di mentalità aperta, curiosa e fortemente motivata, affronto ogni progetto con entusiasmo e determinazione. Mi piace la collaborazione e la comunicazione efficace, poiché ritengo che lavorare in team sia essenziale per ottenere i migliori risultati.La mia esperienza nello sviluppo mobile e web, utilizzando tecnologie come React.js, React Native, Node.js e MongoDB, mi ha permesso di acquisire solide competenze in HTML, CSS, JavaScript e altri strumenti e framework rilevanti. Inoltre, ho esperienza nell'utilizzo di metodologie agili e di strumenti di controllo di versione come Git e GitHub per un efficiente lavoro di squadra. Nel mio tempo libero, mi piace tenermi aggiornato sulle ultime tendenze e sui progressi nel mondo dello sviluppo web. Sono sempre alla ricerca di nuove opportunità per ampliare le mie conoscenze e migliorare le mie competenze tecniche. Oltre alla mia passione per lo sviluppo web, ho anche esperienza nel campo amministrativo, che mi ha permesso di acquisire ulteriori competenze nella gestione dei documenti, nell'organizzazione e nella risoluzione dei conflitti. Se siete interessati al mio lavoro o avete domande, non esitate a contattarmi."
+  "aboutAs": {
+    "titleAbout": "Cosa faccio",
+    "sectionOne": {
+      "1": "Sono uno sviluppatore Full-Stack MERN & Mobile, il mio focus è la creazione di siti web funzionali e coinvolgenti, con un costante miglioramento dell'esperienza utente. Inoltre, ho competenze nello sviluppo di applicazioni mobile utilizzando React Native, progettate specificamente per potenziare il vostro business o servizio.",
+      "2": "Il mio obiettivo principale è quello di fornirvi soluzioni dinamiche ed efficienti che vi permettano di distinguervi nel mercato competitivo di oggi",
+      "3": "Grazie alla mia esperienza e alle mie conoscenze, posso ottimizzare le dinamiche del vostro sito web per ottenere un miglior posizionamento e aumentare la visibilità del vostro marchio.",
+      "4": "I miei servizi comprendono lo sviluppo di siti web, applicazioni mobili e piattaforme di e-commerce. Inoltre, disegno interfacce attraenti e moderne che migliorano l'esperienza dell'utente", 
+      "5": "Sono anche specializzato nell'ottimizzazione delle prestazioni per ottenere velocità ed efficienza. Inoltre, posso integrare API per estendere le funzionalità del vostro progetto. Infine, offro servizi di manutenzione, supporto tecnico, aggiornamenti e miglioramenti continui",
+      "6": "Il mio obiettivo principale è lo sviluppo web e sono appassionato di lavorare in team per creare soluzioni innovative e di qualità."
+    }
+    }
+  
+
 }
+

@@ -22,7 +22,7 @@ export default {
         septenary: '#BCCEF7',
         octary: '#46326E',
         nonary: '#DCCAFF',
-        decennial: '#'
+        decennial: '#5B48A4'
       },
     },
   },

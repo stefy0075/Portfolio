@@ -26,5 +26,18 @@
     "mesaje": "Message",
     "button": "Send"
   },
-  "aboutAs" : "I am a passionate and organized full-stack MERN developer, always looking for new challenges and opportunities to learn and grow. My primary focus is web development, and I am passionate about working in a team to create innovative and quality solutions.Open-minded, curious and highly motivated, I approach every project with enthusiasm and determination. I enjoy collaboration and effective communication, as I believe that working in a team is essential to achieve the best results.My experience in mobile and web development, using technologies such as React.js, React Native, Node.js and MongoDB, has allowed me to acquire solid skills in HTML, CSS, JavaScript and other relevant tools and frameworks. In addition, I am experienced in using agile methodologies and version control tools such as Git and GitHub for efficient teamwork. In my spare time, I like to keep myself updated on the latest trends and advancements in the world of web development. I am always looking for new opportunities to expand my knowledge and improve my technical skills.In addition to my passion for web development, I also have experience in the administrative field, which has given me additional skills in document management, organization and conflict resolution.I speak English at A2 level, which allows me to read technical documentation, and I have a B1 level in Italian.I am excited to be part of challenging projects and collaborate with talented teams. If you are interested in my work or have any questions, please do not hesitate to contact me.Thank you for visiting my portfolio."
+  "aboutAs": {
+    "titleAbout": "What I do for a living",
+    "sectionOne": {
+      "1": "I am a Full-Stack MERN & Mobile developer, my focus is on creating functional and engaging websites, with constant improvement of the user experience. In addition, I possess skills in developing mobile apps using React Native, specifically designed to boost your business or service.",
+      "2": "My main goal is to provide you with dynamic and efficient solutions that will allow you to stand out in today's competitive market.",
+      "3": "Through my experience and expertise, I can optimize the dynamics of your website to achieve a better positioning and increase the visibility of your brand.",
+      "4": "My services include the development of websites, mobile applications and e-commerce platforms. In addition, I design attractive and modern interfaces that enhance the user experience.",
+      "5": "I also specialize in performance optimization for speed and efficiency. In addition, I can integrate APIs to extend the functionality of your project. Lastly, I offer maintenance services, technical support, upgrades and continuous improvements.", 
+      "6": "My main focus is web development, and I am passionate about working in a team to create innovative and quality solutions."
+    }
+    }
+  
+
 }
+
