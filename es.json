@@ -29,12 +29,13 @@
   "aboutAs": {
     "titleAbout":"A que me dedico",
     "sectionOne": {
-      "1": "Soy desarrolladora Full-Stack MERN & Mobile, mi enfoque se centra en crear páginas web funcionales y atractivas, con la constante mejora de la experiencia del usuario. Además, poseo habilidades en el desarrollo de aplicaciones móviles utilizando React Native, diseñadas específicamente para impulsar tu negocio o servicio.",
-      "2":"Mi objetivo principal es proporcionarte soluciones dinámicas y eficientes que te permitan destacar en el competitivo mercado actual.",
-      "3": "A través de mi experiencia y conocimientos, puedo optimizar la dinámica de tu página web para lograr un mejor posicionamiento y aumentar la visibilidad de tu marca.",
-      "4":"Mis servicios incluyen el desarrollo de sitios web, aplicaciones móviles y plataformas de comercio electrónico. Además, diseño interfaces atractivas y modernas que mejoran la experiencia del usuario.",
-      "5": "También me especializo en la optimización de rendimiento para lograr una mayor velocidad y eficiencia. Además, puedo integrar API para ampliar la funcionalidad de tu proyecto. Por último, ofrezco servicios de mantenimiento, soporte técnico, actualizaciones y mejoras continuas.",
-      "6":"Mi enfoque principal es el desarrollo web, y me apasiona trabajar en equipo para crear soluciones innovadoras y de calidad."
+      "1": "Como desarrolladora Full-Stack MERN (MongoDB, Express.js, React.js, Node.js) & Mobile, mi enfoque se centra en:",
+      "2":"Crear páginas web funcionales y atractivas, con la constante mejora de la experiencia del usuario",
+      "3": "Desarrollar aplicaciones móviles utilizando React Native, diseñadas específicamente para impulsar tu negocio o servicio.",
+      "4":"Optimizar la dinámica de tu página web para lograr un mejor posicionamiento y aumentar la visibilidad de tu marca.",
+      "5": "También me especializo en la optimización de rendimiento para lograr una mayor velocidad y eficiencia.",
+      "6":"Además, puedo integrar API para ampliar la funcionalidad de tu proyecto.",
+      "7":"Por último, ofrezco servicios de mantenimiento, soporte técnico, actualizaciones y mejoras continuas."
     }
     }
   

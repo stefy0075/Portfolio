@@ -29,12 +29,13 @@
   "aboutAs": {
     "titleAbout": "Cosa faccio",
     "sectionOne": {
-      "1": "Sono uno sviluppatore Full-Stack MERN & Mobile, il mio focus è la creazione di siti web funzionali e coinvolgenti, con un costante miglioramento dell'esperienza utente. Inoltre, ho competenze nello sviluppo di applicazioni mobile utilizzando React Native, progettate specificamente per potenziare il vostro business o servizio.",
-      "2": "Il mio obiettivo principale è quello di fornirvi soluzioni dinamiche ed efficienti che vi permettano di distinguervi nel mercato competitivo di oggi",
-      "3": "Grazie alla mia esperienza e alle mie conoscenze, posso ottimizzare le dinamiche del vostro sito web per ottenere un miglior posizionamento e aumentare la visibilità del vostro marchio.",
-      "4": "I miei servizi comprendono lo sviluppo di siti web, applicazioni mobili e piattaforme di e-commerce. Inoltre, disegno interfacce attraenti e moderne che migliorano l'esperienza dell'utente", 
-      "5": "Sono anche specializzato nell'ottimizzazione delle prestazioni per ottenere velocità ed efficienza. Inoltre, posso integrare API per estendere le funzionalità del vostro progetto. Infine, offro servizi di manutenzione, supporto tecnico, aggiornamenti e miglioramenti continui",
-      "6": "Il mio obiettivo principale è lo sviluppo web e sono appassionato di lavorare in team per creare soluzioni innovative e di qualità."
+      "1": "Come sviluppatore Full-Stack MERN (MongoDB, Express.js, React.js, Node.js) & Mobile, il mio focus è su:",
+      "2": "Creare siti web funzionali e attraenti, con il costante miglioramento dell'esperienza utente",
+      "3": "Sviluppare applicazioni mobili utilizzando React Native, progettate specificamente per guidare il vostro business o servizio",
+      "4": "Ottimizzare le dinamiche del vostro sito web per ottenere un miglior posizionamento e aumentare la visibilità del vostro marchio",
+      "5": "Sono anche specializzato nell'ottimizzazione delle prestazioni per ottenere velocità ed efficienza",
+      "6": "Inoltre, posso integrare API per estendere le funzionalità del vostro progetto",
+      "7": "Infine, offro servizi di manutenzione, assistenza tecnica, aggiornamenti e miglioramenti continui."
     }
     }
   

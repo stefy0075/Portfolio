@@ -29,12 +29,13 @@
   "aboutAs": {
     "titleAbout": "What I do for a living",
     "sectionOne": {
-      "1": "I am a Full-Stack MERN & Mobile developer, my focus is on creating functional and engaging websites, with constant improvement of the user experience. In addition, I possess skills in developing mobile apps using React Native, specifically designed to boost your business or service.",
-      "2": "My main goal is to provide you with dynamic and efficient solutions that will allow you to stand out in today's competitive market.",
-      "3": "Through my experience and expertise, I can optimize the dynamics of your website to achieve a better positioning and increase the visibility of your brand.",
-      "4": "My services include the development of websites, mobile applications and e-commerce platforms. In addition, I design attractive and modern interfaces that enhance the user experience.",
-      "5": "I also specialize in performance optimization for speed and efficiency. In addition, I can integrate APIs to extend the functionality of your project. Lastly, I offer maintenance services, technical support, upgrades and continuous improvements.", 
-      "6": "My main focus is web development, and I am passionate about working in a team to create innovative and quality solutions."
+      "1": "As a Full-Stack MERN (MongoDB, Express.js, React.js, Node.js) & Mobile developer, my focus is on:",
+      "2": "Creating functional and attractive web pages, with the constant improvement of the user experience",
+      "3": "Develop mobile apps using React Native, designed specifically to drive your business or service.",
+      "4": "Optimize the dynamics of your website to achieve a better positioning and increase the visibility of your brand.",
+      "5": "I also specialize in performance optimization to achieve greater speed and efficiency.",
+      "6": "In addition, I can integrate APIs to extend the functionality of your project.",
+      "7": "Lastly, I offer maintenance services, technical support, upgrades and continuous improvements."
     }
     }
   
