@@ -27,9 +27,29 @@ function AboutAs() {
       </div>
       <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-decennial bg-center bg-cover bg-no-repeat border ">
       <div className="min-h-screen w-[60%] border "></div>
-      <div className="min-h-screen w-[40%] border ">
-        <img src="" alt="" />
-      </div>
+      <div className="min-h-screen w-[40%] border flex flex-col items-center justify-center gap-[1rem]">
+      <img
+            className="h-[12em] rounded-[0.5rem]"
+            src="../../src/assets/title.two.png"
+            alt="Logo"
+          />
+          <img
+            className="h-[10em] rounded-[0.5rem] mt-[-6rem] mr-[-20em]"
+            src="../../src/assets/title.five.png"
+            alt="Logo"
+          />
+          <img
+            className="h-[10em]  rounded-[0.5rem] mt-[-4rem] ml-[-5rem]"
+            src="../../src/assets/title.three.png"
+            alt="Logo"
+          />
+          <img
+            className="h-[10em] rounded-[0.5rem] mt-[-4rem] mr-[-5rem]"
+            src="../../src/assets/title.four.png"
+            alt="Logo"
+          />
+          
+        </div>
 
       </div>
     </>
