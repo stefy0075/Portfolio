@@ -29,22 +29,22 @@ function AboutAs() {
       <div className="min-h-screen w-[60%] border "></div>
       <div className="min-h-screen w-[40%] border flex flex-col items-center justify-center gap-[1rem]">
       <img
-            className="h-[12em] rounded-[0.5rem]"
+            className="h-[12em] shadow-2xl border-black border-[0.5rem]  rounded-[0.5rem]"
             src="../../src/assets/title.two.png"
             alt="Logo"
           />
           <img
-            className="h-[10em] rounded-[0.5rem] mt-[-6rem] mr-[-20em]"
+            className="h-[11em] shadow-2xl border-black border-[0.5rem] rounded-[0.5rem] mt-[-6rem] mr-[-20em]"
             src="../../src/assets/title.five.png"
             alt="Logo"
           />
           <img
-            className="h-[10em]  rounded-[0.5rem] mt-[-4rem] ml-[-5rem]"
+            className="h-[10em] shadow-2xl border-black border-[0.5rem]   rounded-[0.5rem] mt-[-5em] ml-[-5rem]"
             src="../../src/assets/title.three.png"
             alt="Logo"
           />
           <img
-            className="h-[10em] rounded-[0.5rem] mt-[-4rem] mr-[-5rem]"
+            className="h-[10em] shadow-2xl border-black border-[0.5rem]  rounded-[0.5rem] mt-[-4rem] mr-[-5rem]"
             src="../../src/assets/title.four.png"
             alt="Logo"
           />
