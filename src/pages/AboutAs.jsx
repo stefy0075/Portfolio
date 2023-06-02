@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Grafic3 from "../components/grafic3";
 
 function AboutAs() {
   const { t } = useTranslation();
@@ -97,10 +98,10 @@ function AboutAs() {
       </div>
       <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-septenary border">
         <div className="w-[30%] h-[100%] border p-[3%]">
-
+          <Grafic3 />
         </div>
         <div className="w-[70%] h-[100%] border p-[3%]">
-        <h1 className="text-white w-[90%] text-4xl mt-[4rem] mb-[3rem] font-bold text-center">
+          <h1 className="text-white w-[90%] text-4xl mt-[4rem] mb-[3rem] font-bold text-center">
             {t("aboutAs.sectionThree.1")}
           </h1>
           <p className="text-white pl-[1rem] m-[1rem] mb-[2rem] text-2xl">
