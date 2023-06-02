@@ -95,6 +95,28 @@ function AboutAs() {
           />
         </div>
       </div>
+      <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-septenary border">
+        <div className="w-[30%] h-[100%] border p-[3%]">
+
+        </div>
+        <div className="w-[70%] h-[100%] border p-[3%]">
+        <h1 className="text-white w-[90%] text-4xl mt-[4rem] mb-[3rem] font-bold text-center">
+            {t("aboutAs.sectionThree.1")}
+          </h1>
+          <p className="text-white pl-[1rem] m-[1rem] mb-[2rem] text-2xl">
+            {t("aboutAs.sectionThree.2")}
+          </p>
+          <p className="text-white pl-[1rem] m-[1rem] mb-[2rem] text-2xl">
+            {t("aboutAs.sectionThree.3")}
+          </p>
+          <p className="text-white pl-[1rem] m-[1rem] mb-[2rem] text-2xl">
+            {t("aboutAs.sectionThree.4")}
+          </p>
+          <p className="text-white pl-[1rem] m-[1rem]  mb-[2rem] text-2xl">
+            {t("aboutAs.sectionThree.5")}
+          </p>
+        </div>
+      </div>
     </>
   );
 }

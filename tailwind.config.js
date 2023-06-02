@@ -19,7 +19,7 @@ export default {
         quaternary: '#2d0085',
         quintary: '#7957BC',
         sextary: '#233dff',
-        septenary: '#BCCEF7',
+        septenary: '#5B388A',
         octary: '#46326E',
         nonary: '#DCCAFF',
         decennial: '#5B48A4'
