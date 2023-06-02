@@ -1,11 +1,11 @@
 import "./grafic3.css"
 const Grafic3 = () => {
   return (
-    <div className="w-[100%] h-[100%]">
+    <div className="w-[100%] flex items-center justify-center ml-[-5rem]">
         <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlnsXlink="http://www.w3.org/1999/xlink"
-  viewBox="0 0 1920 1080"
+  viewBox="0 0 1620 1280"
 >
 
   <defs>
@@ -17,7 +17,7 @@ const Grafic3 = () => {
       y2="364.42"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stopColor="#ff1d4b" />
+      <stop offset="0" stopColor="#46326E" />
       <stop offset="1" stopColor="#b83dfd" />
     </linearGradient>
     <linearGradient
@@ -28,8 +28,8 @@ const Grafic3 = () => {
       y2="577.96"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stopColor="#ff1d4b" />
-      <stop offset="1" stopColor="#ffc500" />
+      <stop offset="0" stopColor="#050a30" />
+      <stop offset="1" stopColor="#233dff" />
     </linearGradient>
     <linearGradient
       id="C"
@@ -39,12 +39,8 @@ const Grafic3 = () => {
       y2="758.99"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stopColor="#1c48bf" />
-      <stop offset=".12" stopColor="#2747c3" />
-      <stop offset=".34" stopColor="#4345ce" />
-      <stop offset=".62" stopColor="#7142e1" />
-      <stop offset=".96" stopColor="#b13efa" />
-      <stop offset="1" stopColor="#b93dfd" />
+      <stop offset="0" stopColor="#b93dfd" />
+      <stop offset="1" stopColor="#46326E" />
     </linearGradient>
     <linearGradient
       id="D"
@@ -62,7 +58,7 @@ const Grafic3 = () => {
       y2="182.5"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stopColor="#1c48bf" />
+      <stop offset="0" stopColor="#46326E" />
       <stop offset="1" stopColor="#b93dfd" />
     </linearGradient>
     <linearGradient
@@ -138,7 +134,8 @@ const Grafic3 = () => {
   />
   <path
     d="M1203.44 871.82V783c-.55 23.11-106.17 41.81-236.39 41.81-130.55 0-236.39-18.8-236.4-42v148.9c0 23.19 105.84 42 236.4 42s236.4-18.8 236.4-42v-48.29z"
-    fill="#c154fd"
+    fill="#2d0085"
+    
   />
   <path
     d="M830.05 289.28L809 203.91s-4.07-12.8 6.11-19.45 36.64-8.15 36.64-8.15l29 111-50.7 1.97z"
@@ -164,7 +161,7 @@ const Grafic3 = () => {
   />
   <path
     d="M921.43 363.36s-.22-7.28 3.7-12.39a1.26 1.26 0 011.26-.36c3.58.64 8.53 2.29 11.75 5.05a5.93 5.93 0 011.56 7.21q-.12.22-.27.45z"
-    fill="#dd1250"
+    fill="#da7800"
   />
   <path
     d="M846.52 251.34L854 285.7l54.91-.53-3.93 18.46s-3 16.72-4 27.77a1.07 1.07 0 00.69 1.18c2.38.75 9.6 2.51 21.28.81a1.06 1.06 0 00.84-.71l13.16-42.09 16.86 31a.69.69 0 00.77.34c1.87-.45 8.54-2.46 17.4-9.72a.7.7 0 00.23-.74c-1.49-5.22-16-55.69-21.59-67.88-6-13-12.12-29.4-65.15-10.94z"
@@ -185,7 +182,7 @@ const Grafic3 = () => {
   />
   <path
     d="M990.8 336.29s-5.61-7.06-5.07-13.93c0 0 8.74-3 14-2.69a6.11 6.11 0 015.72 5c0 .17 0 .35.06.53z"
-    fill="#dd1250"
+    fill="#da7800"
   />
   <rect
     x="966.64"
