@@ -4,7 +4,7 @@ function Skills() {
 //   const { t } = useTranslation();
   return (
     <>
-      <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-nonary bg-center bg-cover bg-no-repeat">
+      <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-skills bg-center bg-cover bg-no-repeat">
         <div
           className="w-[30%] h-[100%] border p-[3%]"
         >
