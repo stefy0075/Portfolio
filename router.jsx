@@ -4,6 +4,7 @@ import Layout from "./src/Layout/Layout";
 import AboutAs from "./src/pages/AboutAs";
 import ContactForm from "./src/pages/Contacts";
 import Proyects from "./src/pages/Proyects";
+import Skills from "./src/pages/Skills";
 
 
 const router = createBrowserRouter([
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/skills",
-        element: <AboutAs />,
+        element: <Skills />,
       },   
     ],
   },
