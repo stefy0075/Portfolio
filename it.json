@@ -30,29 +30,29 @@
     "titleAbout": "Cosa faccio",
     "sectionOne": {
       "1": "Come sviluppatore Full-Stack MERN (MongoDB, Express.js, React.js, Node.js) & Mobile, il mio focus è su:",
-      "2": "Creare siti web funzionali e attraenti, con il costante miglioramento dell'esperienza utente",
-      "3": "Sviluppare applicazioni mobili utilizzando React Native, progettate specificamente per guidare il vostro business o servizio",
-      "4": "Ottimizzare le dinamiche del vostro sito web per ottenere un miglior posizionamento e aumentare la visibilità del vostro marchio",
-      "5": "Sono anche specializzato nell'ottimizzazione delle prestazioni per ottenere velocità ed efficienza",
-      "6": "Inoltre, posso integrare API per estendere le funzionalità del vostro progetto",
+      "2": "Creare siti web funzionali e attraenti, con il costante miglioramento dell'esperienza utente.",
+      "3": "Sviluppare applicazioni mobili utilizzando React Native, progettate specificamente per guidare il vostro business o servizio.",
+      "4": "Ottimizzare le dinamiche del vostro sito web per ottenere un miglior posizionamento e aumentare la visibilità del vostro marchio.",
+      "5": "Sono anche specializzato nell'ottimizzazione delle prestazioni per ottenere velocità ed efficienza.",
+      "6": "Inoltre, posso integrare API per estendere le funzionalità del vostro progetto.",
       "7": "Infine, offro servizi di manutenzione, assistenza tecnica, aggiornamenti e miglioramenti continui."
     },
     "sectionTwo": {
       "1": "Formazione accademica e didattica in programmazione",
       "2": "Sviluppatore Full-Stack MERN e Mobile",
-      "3": "In questo programma di formazione ho acquisito solide conoscenze nello sviluppo full-stack. Ho imparato a costruire applicazioni web complete e ho sviluppato competenze per creare applicazioni mobili efficienti",
+      "3": "In questo programma di formazione ho acquisito solide conoscenze nello sviluppo full-stack. Ho imparato a costruire applicazioni web complete e ho sviluppato competenze per creare applicazioni mobili efficienti.",
       "4": "Sviluppo Front-End",
-      "5": "Durante questo corso ho imparato a creare interfacce web attraenti e funzionali, a strutturare e stilizzare le pagine web, nonché a implementare interazioni e animazioni per migliorare l'esperienza dell'utente",
+      "5": "Durante questo corso ho imparato a creare interfacce web attraenti e funzionali, a strutturare e stilizzare le pagine web, nonché a implementare interazioni e animazioni per migliorare l'esperienza dell'utente.",
       "6": "HTML & CSS",
-      "7": "Questo corso mi ha insegnato a creare e strutturare i contenuti web in modo semantico. Ho acquisito conoscenze sulle strutture responsive e ottimizzate per i diversi dispositivi",
+      "7": "Questo corso mi ha insegnato a creare e strutturare i contenuti web in modo semantico. Ho acquisito conoscenze sulle strutture responsive e ottimizzate per i diversi dispositivi.",
       "8": "Basi di programmazione",
-      "9": "Durante questo corso ho acquisito una solida base dei concetti fondamentali della programmazione, delle strutture dati e degli algoritmi. Ho acquisito capacità pratiche di problem solving e di pensiero logico, gettando le basi per il mio percorso nel campo della programmazione"
+      "9": "Durante questo corso ho acquisito una solida base dei concetti fondamentali della programmazione, delle strutture dati e degli algoritmi. Ho acquisito capacità pratiche di problem solving e di pensiero logico, gettando le basi per il mio percorso nel campo della programmazione."
     },
     "sectionThree":{
       "1": "Approccio professionale",
       "2": "Il mio approccio si basa sull'eccellenza tecnica e sulla meticolosa attenzione ai dettagli. Mi impegno a creare interfacce intuitive e coinvolgenti, offrendo un'esperienza utente fluida e coinvolgente. Inoltre, do importanza all'efficienza e all'ottimizzazione delle prestazioni, implementando buone pratiche di sviluppo e assicurando che le mie soluzioni siano robuste e sicure.",
       "3": "Con un approccio olistico allo sviluppo full-stack, posso affrontare i progetti dalla pianificazione iniziale all'implementazione e alla distribuzione finale. Ho esperienza nel lavorare in team collaborativi e nell'adattarmi rapidamente alle mutevoli esigenze del progetto, mantenendo sempre standard di qualità elevati e rispettando le scadenze.",
-      "4": "La mia passione per la programmazione e il desiderio di tenermi aggiornato sulle ultime tendenze e tecnologie mi spingono a imparare e migliorare costantemente. Il mio obiettivo è fornire soluzioni innovative ed efficienti che favoriscano il successo dei progetti in cui sono coinvolto e forniscano un valore tangibile agli utenti finali",
+      "4": "La mia passione per la programmazione e il desiderio di tenermi aggiornato sulle ultime tendenze e tecnologie mi spingono a imparare e migliorare costantemente. Il mio obiettivo è fornire soluzioni innovative ed efficienti che favoriscano il successo dei progetti in cui sono coinvolto e forniscano un valore tangibile agli utenti finali.",
       "5": "Sono entusiasta di continuare ad ampliare la mia esperienza e sfidare me stesso con nuovi progetti e opportunità nel campo dello sviluppo Full-Stack MERN & Mobile, portando soluzioni creative e contribuendo alla crescita tecnologica nel mondo digitale."
     }
   }

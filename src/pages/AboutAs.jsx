@@ -11,8 +11,8 @@ function AboutAs() {
          p-[3%]"
         >
           <img
-            className="h-[30%] rounded-[100%] border-8 border-quintary"
-            src="../../src/assets/photo.png"
+            className="h-[30%] rounded-[50%] border-8 border-black"
+            src="../../src/assets/photo2.jpg"
             alt="photo"
           />
         </div>
