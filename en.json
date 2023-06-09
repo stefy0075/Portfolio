@@ -44,20 +44,19 @@
       "4": "Front-End Development",
       "5": "During this course I learned how to create attractive and functional web interfaces, structuring and styling of web pages, as well as implementing interactions and animations to enhance the user experience.",
       "6": "HTML & CSS",
-      "7": "This course taught me how to create and structure web content in a semantic way. I gained knowledge in responsive and optimized structures for different devices.", 
+      "7": "This course taught me how to create and structure web content in a semantic way. I gained knowledge in responsive and optimized structures for different devices.",
       "8": "Programming basics",
       "9": "During this course, I gained a solid foundation in the fundamental concepts of programming, data structures and algorithms. I gained practical skills in problem solving and logical thinking, laying the foundation for my path in the programming field."
     },
-    "sectionThree":{
+    "sectionThree": {
       "1": "Professional Approach",
       "2": "My approach is based on technical excellence and meticulous attention to detail. I strive to create intuitive and engaging interfaces, providing a seamless and immersive user experience. In addition, I value efficiency and performance optimization, implementing good development practices and ensuring that my solutions are robust and secure.",
-      "3": "With a holistic approach to full-stack development, I can tackle projects from initial planning to implementation and final deployment. I am experienced in working in collaborative teams and adapting quickly to changing project requirements, always maintaining high quality standards and meeting deadlines.", 
+      "3": "With a holistic approach to full-stack development, I can tackle projects from initial planning to implementation and final deployment. I am experienced in working in collaborative teams and adapting quickly to changing project requirements, always maintaining high quality standards and meeting deadlines.",
       "4": "My passion for programming and desire to keep up to date with the latest trends and technologies drive me to keep learning and constantly improving. My goal is to deliver innovative and efficient solutions that drive the success of the projects I am involved in and provide tangible value to end users.",
       "5": "I am excited to continue expanding my experience and challenging myself with new projects and opportunities in the field of Full-Stack MERN & Mobile development, bringing creative solutions and contributing to technological growth in the digital world."
     }
-
-    }
-  
-
+  },
+  "skillOne": "Technical programming skills",
+  "skillTwo": "Web programming skills:",
+  "skillThree": "Management skills and methodologies"
 }
-

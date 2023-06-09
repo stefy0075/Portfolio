@@ -1,35 +1,38 @@
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
+import {Cards, Cards1, Cards2} from '../components/cards'
+
+
 
 function Skills() {
-//   const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
-      <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-skills bg-center bg-cover bg-no-repeat">
-        <div
-          className="w-[30%] h-[100%] border p-[3%]"
-        >
-          
+      <div className="min-h-screen flex flex-col flex-wrap items-center bg-home bg-center bg-cover bg-no-repeat justify-center items-center p-[3%]">
+        <div className="w-[100%] h-[10%] justify-center mt-[3%] mb-[3%]">
+          <h1 className="text-white text-[4em] text-center font-bold">
+            {t("skillOne")}
+          </h1>
         </div>
-        <div className="w-[60%] h-[100%] border pt-[3%] ">
-          
-        </div>
+        <Cards/>
       </div>
-      <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-decennial pl-[2rem] ">
-        <div className="min-h-screen w-[60%]">
-          
+      <div className="min-h-screen flex flex-col flex-wrap justify-center items-center p-[3%] bg-decennial">
+        <div className="w-[100%] h-[10%] ">
+          <h1 className="text-white text-[4em] text-center font-bold m-[3%]">
+            {t("skillTwo")}
+          </h1>
         </div>
-        <div className="min-h-screen w-[40%] flex flex-col items-center justify-center gap-[1rem]">
-        </div>
+        <Cards1/>
       </div>
-      <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-septenary">
-        <div className="w-[40%] h-[100%]">
-          
+      <div className="min-h-screen flex flex-col flex-wrap  items-center p-[3%] bg-septenary">
+        <div className="w-[100%] h-[100%] justify-center">
+          <h1 className="text-white text-[4em] text-center font-bold m-[3%]">
+            {t("skillThree")}
+          </h1>
         </div>
-        <div className="w-[60%] h-[100%] p-[3%]">
-        </div>
+        <Cards2/>
       </div>
     </>
   );
 }
 
-export default Skills
+export default Skills;

@@ -55,5 +55,8 @@
       "4": "La mia passione per la programmazione e il desiderio di tenermi aggiornato sulle ultime tendenze e tecnologie mi spingono a imparare e migliorare costantemente. Il mio obiettivo è fornire soluzioni innovative ed efficienti che favoriscano il successo dei progetti in cui sono coinvolto e forniscano un valore tangibile agli utenti finali.",
       "5": "Sono entusiasta di continuare ad ampliare la mia esperienza e sfidare me stesso con nuovi progetti e opportunità nel campo dello sviluppo Full-Stack MERN & Mobile, portando soluzioni creative e contribuendo alla crescita tecnologica nel mondo digitale."
     }
-  }
+  },
+  "skillOne": "Competenze tecniche di programmazione",
+  "skillTwo": "Capacità di programmazione web",
+  "skillThree": "Competenze e metodologie gestionali"
 }
