@@ -1,5 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  variants: {
+    extend: {
+      scale: ['hover'],
+    },
+  },
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
