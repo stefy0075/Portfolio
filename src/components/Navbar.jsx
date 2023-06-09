@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0">
+    <div className="sticky top-0 z-50">
       <div className="bg-tertiary flex flex-row h-1/6 items-center justify-between ">
         <div className="m-[1rem] flex flex-row items-center gap-2">
           <img
