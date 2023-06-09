@@ -166,7 +166,7 @@ export const Cards = () => {
         <div className="rounded-[1em] p-[3%] transform hover:scale-105 css  bg-primary m-[2%]">
           <img
             className=" h-[7em]"
-            src="../../src/assets/react.png"
+            src="../../src/assets/api.png"
             alt="RESTful API"
           />
           <h2 className="text-white text-xl text-center pb-[0.5%]">
@@ -298,7 +298,7 @@ export const Cards2 = () => {
         <div className="rounded-[1em] p-[3%] transform hover:scale-105 css  flex flex-col bg-primary m-[2%]  items-center ">
           <img
             className=" h-[7em]"
-            src="../../src/assets/figma.png"
+            src="../../src/assets/agile.png"
             alt="Metodologias Agile"
           />
           <h2 className="text-white text-xl text-center pb-[0.5%]">
@@ -308,7 +308,7 @@ export const Cards2 = () => {
         <div className="rounded-[1em] p-[3%] transform hover:scale-105 css  bg-primary m-[2%]">
           <img
             className=" h-[7em]"
-            src="../../src/assets/figma.png"
+            src="../../src/assets/scrum.png"
             alt="Scrum"
           />
           <h2 className="text-white text-xl text-center pb-[0.5%]">Scrum</h2>
@@ -316,7 +316,7 @@ export const Cards2 = () => {
         <div className="rounded-[1em] p-[3%] transform hover:scale-105 css  bg-primary m-[2%]">
           <img
             className=" h-[7em]"
-            src="../../src/assets/figma.png"
+            src="../../src/assets/redux.png"
             alt="Redux"
           />
           <h2 className="text-white text-xl text-center pb-[0.5%]">Redux</h2>
