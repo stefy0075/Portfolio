@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <div className="min-h-[100vw]">
-        <div className="min-h-screen bg-quaternary flex flex-row flex-wrap justify-around items-center bg-home bg-center bg-cover bg-no-repeat ">
-          <div className="text-black h-[100%] w-[50%]  flex flex-col justify-around items-center ">
-            <h1 className="text-white font-bold text-5xl text-center m-[2rem]">
+        <div className="h-screen bg-quaternary flex flex-row flex-wrap  bg-home bg-center bg-cover bg-no-repeat ">
+          <div className="h-[100%] w-[50%] flex flex-col pt-[3%]">
+            <h1 className="text-white font-bold text-5xl text-center m-[1em]">
               {t("titleHome")}
             </h1>
             <h2 className="text-white  text-2xl ml-[3rem] mr-[2rem] leading-9 text-justify tracking-wide ">
@@ -21,12 +21,12 @@ function App() {
             <GraficComputer />
           </div>
         </div>
-        <div className="min-h-[100vw] flex flex-col bg-quaternary flex-wrap ">
+        <div className="h-screen flex flex-col bg-quaternary flex-wrap ">
           <div className="flex flex-row bg-quaternary">
-            <div className="w-[45%] h-[100vh] mt-[15%] pt-[5%] pl-[3%] pr-[3%] pb-[3%] flex items-center">
+            <div className="w-[45%] pt-[3%] pl-[3%] flex items-center">
               <Grafic2 />
             </div>
-            <div className="w-[55%] h-[100vh] p-[3%]">
+            <div className="w-[55%] min-h-screen p-[1%] pr-[3%]">
               <h2 className="text-white font-bold text-4xl text-center m-[1.5rem] pb-[1.5rem]">
                 {t("subtitleHome")}
               </h2>
@@ -40,13 +40,10 @@ function App() {
                   </li>
                 ))}
               </ul>
-              <p className="text-white text-2xl mt-[2.5rem] mb-[2.5rem]">
+              <p className="text-white text-2xl mt-[2.5rem] mb-[2.5em]">
                 {t("descriptionHomeFinal")}
               </p>
             </div>
-          </div>
-          <div className="border h-[100%] w-[100%]">
-            <p className="text-white text-4xl">Section2</p>
           </div>
         </div>
       </div>

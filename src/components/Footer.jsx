@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" flex items-center justify-center h-[50%] w-[100%]">
-        <p>
+        <p className="pb-[1%]">
           Copyright © 2023 | All Rights Reserved | Powered by Eliana Guarino
         </p>
       </div>
