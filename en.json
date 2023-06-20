@@ -37,17 +37,6 @@
       "6": "In addition, I can integrate APIs to extend the functionality of your project.",
       "7": "Lastly, I offer maintenance services, technical support, upgrades and continuous improvements."
     },
-    "sectionTwo": {
-      "1": "Academic and Educational Training in Programming",
-      "2": "Full-Stack MERN & Mobile Developer",
-      "3": "In this training program, I gained solid knowledge in full-stack development. I learned how to build complete web applications, as well as developed skills to create efficient mobile applications.",
-      "4": "Front-End Development",
-      "5": "During this course I learned how to create attractive and functional web interfaces, structuring and styling of web pages, as well as implementing interactions and animations to enhance the user experience.",
-      "6": "HTML & CSS",
-      "7": "This course taught me how to create and structure web content in a semantic way. I gained knowledge in responsive and optimized structures for different devices.",
-      "8": "Programming basics",
-      "9": "During this course, I gained a solid foundation in the fundamental concepts of programming, data structures and algorithms. I gained practical skills in problem solving and logical thinking, laying the foundation for my path in the programming field."
-    },
     "sectionThree": {
       "1": "Professional Approach",
       "2": "My approach is based on technical excellence and meticulous attention to detail. I strive to create intuitive and engaging interfaces, providing a seamless and immersive user experience. In addition, I value efficiency and performance optimization, implementing good development practices and ensuring that my solutions are robust and secure.",
@@ -57,6 +46,5 @@
     }
   },
   "skillOne": "Technical programming skills",
-  "skillTwo": "Web programming skills:",
   "skillThree": "Management skills and methodologies"
 }

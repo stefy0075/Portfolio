@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Cards, Cards1, Cards2 } from "../components/cards";
+import { Cards, Cards2 } from "../components/cards";
 
 function Skills() {
   const { t } = useTranslation();
@@ -12,14 +12,6 @@ function Skills() {
           </h1>
         </div>
         <Cards />
-      </div>
-      <div className="min-h-screen flex flex-col flex-wrap justify-center items-center p-[3%] bg-decennial">
-        <div className="w-[100%] h-[10%] ">
-          <h1 className="text-white text-5xl text-center font-bold m-[3%]">
-            {t("skillTwo")}
-          </h1>
-        </div>
-        <Cards1 />
       </div>
       <div className="min-h-screen flex flex-col flex-wrap  items-center p-[3%] bg-septenary w-[100%]">
         <div className="w-[100%] h-[100%] justify-center">

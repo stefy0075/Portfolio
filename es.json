@@ -37,17 +37,6 @@
       "6": "Además, puedo integrar API para ampliar la funcionalidad de tu proyecto.",
       "7": "Por último, ofrezco servicios de mantenimiento, soporte técnico, actualizaciones y mejoras continuas."
     },
-    "sectionTwo": {
-      "1": "Formación Académica y Educativa en Programación",
-      "2": "Desarrollador Full-Stack MERN & Mobile",
-      "3": "En este programa de formación, adquirí conocimientos sólidos en el desarrollo full-stack. Aprendí a construir aplicaciones web completas, además de desarrollar habilidades para crear aplicaciones móviles eficientes.",
-      "4": "Desarrollo Front-End",
-      "5": "Durante este curso aprendí a crear interfaces web atractivas y funcionales, estructuración y estilización de páginas web, así como implementación de interacciones y animaciones para mejorar la experiencia del usuario.",
-      "6": "HTML & CSS",
-      "7": "Este curso me enseño a crear y estructurar contenido web de manera semántica. Adquirí conocimientos en estructuras responsivas y optimizadas para diferentes dispositivos.",
-      "8": "Conceptos básicos de Programación",
-      "9": "Durante este curso, obtuve una base sólida en los conceptos fundamentales de la programación, estructuras de datos y algoritmos. Adquirí conocimientos prácticos en la resolución de problemas y el pensamiento lógico, sentando las bases para mi trayectoria en el campo de la programación."
-    },
     "sectionThree": {
       "1": "Enfoque Profesional",
       "2": "Mi enfoque se basa en la excelencia técnica y la atención meticulosa a los detalles. Me esfuerzo por crear interfaces intuitivas y atractivas, brindando una experiencia de usuario fluida y envolvente. Además, valoro la eficiencia y la optimización del rendimiento, implementando buenas prácticas de desarrollo y asegurándome de que mis soluciones sean sólidas y seguras.",
@@ -57,7 +46,6 @@
     }
   },
   "skillOne": "Habilidades técnicas de programación",
-  "skillTwo": "Habilidades de programación web:",
   "skillThree": "Habilidades de gestión y metodologías"
 
 }
