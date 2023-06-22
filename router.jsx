@@ -21,6 +21,10 @@ const router = createBrowserRouter([
         element: <AboutAs />,
       },
       {
+        path: "/proyects",
+        element: <Proyects />,
+      },
+      {
         path: "/contact",
         element: <ContactForm />,
       },
@@ -31,10 +35,6 @@ const router = createBrowserRouter([
       },   
     ],
     
-  },
-  {
-    path: "/proyects",
-    element: <Proyects />,
   },
 ]);
 

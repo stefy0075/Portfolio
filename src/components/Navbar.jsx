@@ -30,29 +30,29 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex gap-5 mr-10 flex-row items-center">
-          <Link className="text-white text-xl" to="/">
+          <Link className="text-white text-xl font-bold" to="/">
             {t("home")}
           </Link>
-          <Link className="text-white text-xl" to="/about-as">
+          <Link className="text-white text-xl font-bold" to="/about-as">
             {t("about")}
           </Link>
-          <Link className="text-white text-xl" to="/proyects">
+          <Link className="text-white text-xl font-bold" to="/proyects">
             {t("projects")}
           </Link>
-          <Link className="text-white text-xl" to="/contact">
+          <Link className="text-white text-xl font-bold" to="/contact">
             {t("contact")}
           </Link>
-          <Link className="text-white text-xl" to="/skills">
+          <Link className="text-white text-xl font-bold" to="/skills">
             {t("skills")}
           </Link>
           <div className="flex items-center ml-[2rem]">
             {!isLanguageMenuOpen && (
-              <span className="text-white text-xl mr-2 flex items-center">
+              <span className="text-white text-xl font-bold mr-2 flex items-center">
                 {t("language")}:
               </span>
             )}
             {isLanguageMenuOpen && (
-              <div className="language-menu flex text-white text-xl flex-col">
+              <div className="language-menu flex text-white text-xl font-bold flex-col">
                 <button onClick={() => changeLanguage("es")}>Spanish</button>
                 <button onClick={() => changeLanguage("en")}>English</button>
                 <button onClick={() => changeLanguage("it")}>Italian</button>

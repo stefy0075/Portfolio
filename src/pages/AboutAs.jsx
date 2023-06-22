@@ -10,7 +10,7 @@ function AboutAs() {
           className="w-[30%] h-[100%]"
         >
           <div className="h-[100%] p-[4%] rounded-[50%] border-t-8 border-l-8 border-black">
-          <div className="h-[100%] p-[4%] rounded-[50%] border-t-8 border-r-8 border-white">
+          <div className="h-[100%] p-[4%] rounded-[50%] border-t-8 border-r-8 border-nonary">
           <img
             className="h-[60%] rounded-[50%] border-8 border-black"
             src="../../src/assets/photo2.jpg"
