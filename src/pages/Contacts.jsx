@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
-import emailjs from "emailjs-com";
 import { useRef } from "react";
-import config from "../../config";
+
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -9,24 +8,8 @@ const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        config.serviceId,
-        config.templateId,
-        form.current,
-        config.publicKey
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
+  }
+  
   return (
     <div className="bg-about-as min-h-screen flex flex-col flex-wrap md:flex-row justify-around items-center bg-center bg-cover bg-no-repeat">
       <div className="md:w-1/2 h-full flex flex-col items-center justify-center p-8">
