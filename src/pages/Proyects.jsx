@@ -2,18 +2,23 @@ import { useTranslation } from "react-i18next";
 
 function Proyects() {
   const { t } = useTranslation();
-    return (
-      <>
-        <div className="min-h-screen flex flex-row flex-wrap justify-around items-baseline bg-about-as bg-center bg-cover bg-no-repeat ">
-          <h1 className="text-white text-2xl">{t("proyectsOne")}</h1>
-          
+  return (
+    <>
+      <div className="min-h-screen flex flex-row flex-wrap justify-around items-baseline bg-about-as bg-center bg-cover bg-no-repeat flex flex-col ">
+        <h1 className="text-white mt-[3%] border text-5xl text-center font-bold">
+          {t("proyectsOne")}
+        </h1>
+        <div className="border w-[100%] ">
+
         </div>
-        <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-quaternary">
-          <h1 className="text-white text-2xl">{t("proyectsTwo")}</h1>
-        </div>
-      </>
-    );
-  }
-  
-  export default Proyects;
-  
+      </div>
+      <div className="min-h-screen flex flex-row flex-wrap justify-around bg-quaternary">
+        <h1 className="text-white mt-[3%] text-5xl text-center font-bold">
+          {t("proyectsTwo")}
+        </h1>
+      </div>
+    </>
+  );
+}
+
+export default Proyects;

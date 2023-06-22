@@ -1,4 +1,3 @@
-import GraficComputer from "../components/grafic-computer";
 import { useTranslation } from "react-i18next";
 import Grafic2 from "../components/grafic2";
 
@@ -18,7 +17,7 @@ function App() {
             </h2>
           </div>
           <div className="h-[100%] w-[50%] flex justify-around items-center">
-            <GraficComputer />
+            <img className="h-[90%] w-[57%]" src="../src/assets/computer.svg" alt="Computer"/>
           </div>
         </div>
         <div className="h-screen flex flex-col bg-quaternary flex-wrap ">
