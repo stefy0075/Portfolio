@@ -46,6 +46,8 @@
     }
   },
   "skillOne": "Habilidades técnicas de programación",
-  "skillThree": "Habilidades de gestión y metodologías"
+  "skillThree": "Habilidades de gestión y metodologías",
+  "proyectsOne": "Proyectos Web",
+  "proyectsTwo": "Proyectos Mobiles"
 
 }

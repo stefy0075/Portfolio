@@ -28,7 +28,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-contacts min-h-screen flex flex-col flex-wrap md:flex-row justify-around items-center bg-center bg-cover bg-no-repeat">
+    <div className="bg-about-as min-h-screen flex flex-col flex-wrap md:flex-row justify-around items-center bg-center bg-cover bg-no-repeat">
       <div className="md:w-1/2 h-full flex flex-col items-center justify-center p-8">
         <h1 className="text-white font-bold text-4xl text-center my-6">
           {t("contactH1")}

@@ -46,5 +46,7 @@
     }
   },
   "skillOne": "Technical programming skills",
-  "skillThree": "Management skills and methodologies"
+  "skillThree": "Management skills and methodologies",
+  "proyectsOne": "Web Projects",
+  "proyectsTwo": "Mobile Projects"
 }
