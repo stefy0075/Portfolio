@@ -24,15 +24,17 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <ContactForm />,
       },
-      {
-        path: "/proyects",
-        element: <Proyects />,
-      },
+      
       {
         path: "/skills",
         element: <Skills />,
       },   
     ],
+    
+  },
+  {
+    path: "/proyects",
+    element: <Proyects />,
   },
 ]);
 

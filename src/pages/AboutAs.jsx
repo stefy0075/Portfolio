@@ -7,14 +7,17 @@ function AboutAs() {
     <>
       <div className="min-h-screen flex flex-row flex-wrap justify-around items-center bg-about-as bg-center bg-cover bg-no-repeat">
         <div
-          className="w-[30%] h-[100%] 
-         p-[3%]"
+          className="w-[30%] h-[100%]"
         >
+          <div className="h-[100%] p-[4%] rounded-[50%] border-t-8 border-l-8 border-black">
+          <div className="h-[100%] p-[4%] rounded-[50%] border-t-8 border-r-8 border-white">
           <img
-            className="h-[30%] rounded-[50%] border-8 border-black"
+            className="h-[60%] rounded-[50%] border-8 border-black"
             src="../../src/assets/photo2.jpg"
             alt="photo"
           />
+          </div>
+          </div>
         </div>
         <div className="w-[60%] h-[100%] pt-[3%] ">
           <h1 className="text-white text-4xl mb-[3rem] font-bold text-center">
