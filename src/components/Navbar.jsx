@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import logo from "../assets/Logo.ico";
 
 const Navbar = () => {
   const [isLanguageMenuOpen, setLanguageMenuOpen] = useState(false);
@@ -14,11 +15,7 @@ const Navbar = () => {
     <div className="sticky top-0 z-50">
       <div className="bg-tertiary flex flex-row h-1/6 items-center justify-between ">
         <div className="m-[1rem] flex flex-row items-center gap-2">
-          <img
-            className="h-[5em] logo-e"
-            src="../../src/assets/Logo.ico"
-            alt="Logo"
-          />
+          <img className="h-[5em] logo-e" src={logo} alt="Logo" />
           <div className="flex flex-col justify-center">
             <h1 className="text-white text-xl cssh1 font-bold text-center">
               Eliana Guarino
