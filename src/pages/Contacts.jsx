@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useRef } from "react";
+import './bg.css'
 
 
 const ContactForm = () => {
@@ -11,16 +12,16 @@ const ContactForm = () => {
   }
   
   return (
-    <div className="bg-about-as min-h-screen flex flex-col flex-wrap md:flex-row justify-around items-center bg-center bg-cover bg-no-repeat">
+    <div className="css-about min-h-screen flex flex-col flex-wrap md:flex-row justify-around items-center">
       <div className="md:w-1/2 h-full flex flex-col items-center justify-center p-8">
-        <h1 className="text-white font-bold text-4xl text-center my-6">
+        <h1 className="text-white font-bold text-3xl text-center my-6">
           {t("contactH1")}
         </h1>
-        <p className="text-white text-2xl my-6 tracking-wider text-justify">
+        <p className="text-white text-lg my-6 tracking-wider text-justify">
           {t("contactDescription")}
         </p>
       </div>
-      <div className="md:w-1/2 h-full">
+      <div className="md:w-[40%] h-full">
         <form
           ref={form}
           onSubmit={sendEmail}

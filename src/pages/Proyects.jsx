@@ -1,13 +1,15 @@
 import { useTranslation } from "react-i18next";
-
-import { FaGithub, FaGlobe } from "react-icons/fa"; // Importa los iconos de GitHub y Navegador Web
+import { FaGithub, FaGlobe } from "react-icons/fa";
+import amazing from "../assets/amazing.jpg"
+import petshop from "../assets/petshop.jpg"
+import './bg.css'
 
 function Proyects() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="min-h-screen flex flex-row flex-wrap justify-start bg-about-as bg-center bg-cover bg-no-repeat flex flex-col ">
-        <h1 className="text-white m-[5%] text-3xl text-center font-bold md:text-5xl ">
+      <div className="min-h-screen flex flex-row flex-wrap justify-start css-about flex flex-col ">
+        <h1 className="text-white m-[3%] text-3xl text-center font-bold">
           {t("proyectsOne")}
         </h1>
         <div className="w-[100%] gap-[3%] flex flex-row flex-wrap justify-center items-center">
@@ -15,7 +17,7 @@ function Proyects() {
             <div className="rounded-[1em] w-[15rem]  md:w-[20rem] css bg-primary m-[2%]">
               <img
                 className="w-[15rem] md:w-[20rem] rounded-t-[1em]"
-                src="../../src/assets/petshop.jpg"
+                src={petshop}
                 alt="Petshop"
               />
               <div className="flex justify-center">
@@ -35,7 +37,7 @@ function Proyects() {
             <div className="rounded-[1em] w-[15rem]  md:w-[20rem] css bg-primary m-[2%]">
               <img
                 className="w-[15rem] md:w-[20rem] rounded-t-[1em]"
-                src="../../src/assets/amazing.jpg"
+                src={amazing}
                 alt="Petshop"
               />
               <div className="flex justify-center">

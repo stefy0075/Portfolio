@@ -1,0 +1,13 @@
+.css-home{
+    background-image: url(../assets/side.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.css-about{
+    background-image: url(../assets/about-as.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
