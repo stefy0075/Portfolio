@@ -1,7 +1,7 @@
 import './grafic2.css'
 const grafic2 = () => {
   return (
-    <div className='h-[100%] w-[100%] flex items-center'>
+    <div className='h-[100%] w-[100%] flex items-center justify-center'>
       <svg xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 995.2732 761.1069"
           xmlSpace="preserve">
