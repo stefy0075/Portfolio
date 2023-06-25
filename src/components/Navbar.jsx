@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import logo from "../assets/Logo.ico";
 import world from "../assets/world.png";
 const Navbar = () => {
@@ -47,12 +48,12 @@ const Navbar = () => {
         >
           {Links.map((link) => (
             <li key={link.name} className="lg:ml-4 text-lg lg:my-0 my-1">
-              <a
-                href={link.link}
+              <Link
+                to={link.link}
                 className="text-white hover:text-gray-400 duration-500"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
           <div className="flex lg:ml-8 text-lg lg:my-0 my-3 items-center lg:ml-[2rem]">
