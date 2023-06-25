@@ -8,7 +8,7 @@ function App() {
   const solutions = t("solutions", { returnObjects: true });
   return (
     <>
-      <div className="min-h-[100vw]">
+      <div className="min-h-screen">
         <div className="min-h-screen flex lg:flex-row-reverse flex-col css-about justify-center items-center">
           <div className="h-[100%] w-[100%]  lg:w-[50%] lg:my-[7%] my-[3%] flex justify-center items-center">
             <img
