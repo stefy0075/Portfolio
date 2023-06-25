@@ -43,7 +43,7 @@ const Navbar = () => {
 
         <ul
           className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static bg-tertiary lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-20 mt-[-1rem]" : "top-[-490px]"
+            open ? "top-20" : "top-[-490px]"
           }`}
         >
           {Links.map((link) => (
