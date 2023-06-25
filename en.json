@@ -27,16 +27,6 @@
     "button": "Send"
   },
   "aboutAs": {
-    "titleAbout": "What I do for a living",
-    "sectionOne": {
-      "1": "As a Full-Stack MERN (MongoDB, Express.js, React.js, Node.js) & Mobile developer, my focus is on:",
-      "2": "Creating functional and attractive web pages, with the constant improvement of the user experience.",
-      "3": "Develop mobile apps using React Native, designed specifically to drive your business or service.",
-      "4": "Optimize the dynamics of your website to achieve a better positioning and increase the visibility of your brand.",
-      "5": "I also specialize in performance optimization to achieve greater speed and efficiency.",
-      "6": "In addition, I can integrate APIs to extend the functionality of your project.",
-      "7": "Lastly, I offer maintenance services, technical support, upgrades and continuous improvements."
-    },
     "sectionThree": {
       "1": "Professional Approach",
       "2": "My approach is based on technical excellence and meticulous attention to detail. I strive to create intuitive and engaging interfaces, providing a seamless and immersive user experience. In addition, I value efficiency and performance optimization, implementing good development practices and ensuring that my solutions are robust and secure.",

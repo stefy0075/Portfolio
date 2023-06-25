@@ -22,16 +22,16 @@ const Navbar = () => {
   return (
     <div className="shadow-lg w-full h-[4rem] sticky bg-tertiary z-50 top-0 left-0">
       <div className="lg:flex flex items-center justify-between bg-tertiary py-4 lg:px-10">
-        <div className="flex flex-row items-center lg:pl-0 pl-7 gap-2">
-            <img className="h-[2.5em] p-2 md:p-0 logo-e" src={logo} alt="Logo" />
+        <div className="flex flex-row items-center lg:pl-0 pl-7 gap-1">
+            <img className="h-[2.5em] px-1 md:p-0 logo-e" src={logo} alt="Logo" />
             <div className="flex flex-col justify-center">
               <h1 className="text-white text-[16px] cssh1 font-bold text-center">
                 Eliana Guarino
               </h1>
-              <h2 className="text-white hidden md:block text-[12px] ">
-                Developer Full-Stack MERN
+              <h2 className="text-white text-[10px] md:text-[12px] ">
+                Developer Full-Stack 
               </h2>
-              <h2 className="text-white  hidden md:block text-[12px] text-center">& Mobile</h2>
+              <h2 className="text-white text-[10px]  md:text-[12px] text-center">& Mobile</h2>
             </div>
           </div>
         <div

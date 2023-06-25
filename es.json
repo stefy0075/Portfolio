@@ -27,16 +27,6 @@
     "button": "Enviar"
   },
   "aboutAs": {
-    "titleAbout": "A que me dedico",
-    "sectionOne": {
-      "1": "Como desarrolladora Full-Stack MERN (MongoDB, Express.js, React.js, Node.js) & Mobile, mi enfoque se centra en:",
-      "2": "Crear páginas web funcionales y atractivas, con la constante mejora de la experiencia del usuario.",
-      "3": "Desarrollar aplicaciones móviles utilizando React Native, diseñadas específicamente para impulsar tu negocio o servicio.",
-      "4": "Optimizar la dinámica de tu página web para lograr un mejor posicionamiento y aumentar la visibilidad de tu marca.",
-      "5": "También me especializo en la optimización de rendimiento para lograr una mayor velocidad y eficiencia.",
-      "6": "Además, puedo integrar API para ampliar la funcionalidad de tu proyecto.",
-      "7": "Por último, ofrezco servicios de mantenimiento, soporte técnico, actualizaciones y mejoras continuas."
-    },
     "sectionThree": {
       "1": "Enfoque Profesional",
       "2": "Mi enfoque se basa en la excelencia técnica y la atención meticulosa a los detalles. Me esfuerzo por crear interfaces intuitivas y atractivas, brindando una experiencia de usuario fluida y envolvente. Además, valoro la eficiencia y la optimización del rendimiento, implementando buenas prácticas de desarrollo y asegurándome de que mis soluciones sean sólidas y seguras.",
