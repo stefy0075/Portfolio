@@ -12,7 +12,7 @@ const Navbar = () => {
   };
   let Links = [
     { name: t("home"), link: "/#" },
-    { name: t("about"), link: "/about-as" },
+    { name: t("about"), link: "/about-me" },
     { name: t("projects"), link: "/proyects" },
     { name: t("contact"), link: "/contact" },
     { name: t("skills"), link: "/skills" },
@@ -29,7 +29,7 @@ const Navbar = () => {
                 Eliana Guarino
               </h1>
               <h2 className="text-white text-[10px] md:text-[12px] ">
-                Developer Full-Stack 
+                Developer Full-Stack (MERN)
               </h2>
               <h2 className="text-white text-[10px]  md:text-[12px] text-center">& Mobile</h2>
             </div>

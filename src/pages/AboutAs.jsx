@@ -18,7 +18,7 @@ function AboutAs() {
             </div>
           </div>
         </div>
-        <div className="lg:w-[60%] w-[100%] h-[100%] pr-[3%] pt-[3%]">
+        <div className="lg:w-[60%] w-[100%] flex flex-col justify-center items-center h-[100%] pt-[3%]">
           <h1 className="text-white w-[90%] text-xl lg:text-3xl mb-[2rem] font-bold text-center">
             {t("aboutAs.sectionThree.1")}
           </h1>
