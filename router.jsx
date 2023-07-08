@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./src/pages/Home";
 import Layout from "./src/Layout/Layout";
-import AboutAs from "./src/pages/AboutAs";
+import AboutMe from "./src/pages/AboutMe";
 import ContactForm from "./src/pages/Contacts";
-import Proyects from "./src/pages/Proyects";
+import Projects from "./src/pages/Projects";
 import Skills from "./src/pages/Skills";
 
 
@@ -18,11 +18,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/about-me",
-        element: <AboutAs />,
+        element: <AboutMe />,
       },
       {
-        path: "/proyects",
-        element: <Proyects />,
+        path: "/projects",
+        element: <Projects />,
       },
       {
         path: "/contact",

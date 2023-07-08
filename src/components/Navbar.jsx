@@ -13,7 +13,7 @@ const Navbar = () => {
   let Links = [
     { name: t("home"), link: "/#" },
     { name: t("about"), link: "/about-me" },
-    { name: t("projects"), link: "/proyects" },
+    { name: t("projects"), link: "/projects" },
     { name: t("contact"), link: "/contact" },
     { name: t("skills"), link: "/skills" },
   ];
