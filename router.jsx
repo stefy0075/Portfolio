@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import App from "./src/pages/Home";
 import Layout from "./src/Layout/Layout";
 import AboutMe from "./src/pages/AboutMe";
@@ -6,8 +6,7 @@ import ContactForm from "./src/pages/Contacts";
 import Projects from "./src/pages/Projects";
 import Skills from "./src/pages/Skills";
 
-
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout />,
@@ -28,13 +27,11 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <ContactForm />,
       },
-      
       {
         path: "/skills",
         element: <Skills />,
       },   
     ],
-    
   },
 ]);
 
