@@ -38,6 +38,14 @@
   "skillOne": "Habilidades técnicas de programación",
   "skillThree": "Habilidades de gestión y metodologías",
   "proyectsOne": "Proyectos Web",
-  "proyectsTwo": "Proyectos Mobiles"
-
+  "proyectsTwo": "Proyectos Mobiles",
+  "carousel": {
+    "1": "Desarrollo de sitios web modernos y responsivos.",
+    "2": "Soluciones personalizadas para cada necesidad.",
+    "3": "Aplicaciones móviles intuitivas y funcionales.",
+    "4": "Interfaces atractivas y diseño centrado en el usuario.",
+    "5": "Optimización de rendimiento y velocidad.",
+    "6": "Integración de APIs y servicios externos.",
+    "7": "Mantenimiento y soporte continuo."
+  }
 }

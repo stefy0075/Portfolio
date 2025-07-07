@@ -38,5 +38,14 @@
   "skillOne": "Technical programming skills",
   "skillThree": "Management skills and methodologies",
   "proyectsOne": "Web Projects",
-  "proyectsTwo": "Mobile Projects"
+  "proyectsTwo": "Mobile Projects",
+  "carousel": {
+    "1": "Development of modern and responsive websites.",
+    "2": "Custom solutions tailored to every need.",
+    "3": "Intuitive and functional mobile applications.",
+    "4": "Attractive interfaces and user-centered design.",
+    "5": "Performance and speed optimization.",
+    "6": "API integration and external services.",
+    "7": "Continuous maintenance and support."
+  }
 }

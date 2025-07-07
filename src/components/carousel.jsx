@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useTranslation } from 'react-i18next';
 
 // Import de imágenes desde src/assets
 import img1 from '../assets/1.png';
@@ -11,20 +12,19 @@ import img5 from '../assets/5.png';
 import img6 from '../assets/6.png';
 import img7 from '../assets/7.png';
 
-const slides = [
-  { text: 'Desarrollo de sitios web modernos y responsivos.', image: img2 },
-  { text: 'Soluciones personalizadas para cada necesidad.', image: img1 },
-  { text: 'Aplicaciones móviles intuitivas y funcionales.', image: img3 },
-  {
-    text: 'Interfaces atractivas y diseño centrado en el usuario.',
-    image: img4,
-  },
-  { text: 'Optimización de rendimiento y velocidad.', image: img5 },
-  { text: 'Integración de APIs y servicios externos.', image: img6 },
-  { text: 'Mantenimiento y soporte continuo.', image: img7 },
-];
-
 const Carousel = () => {
+  const { t } = useTranslation();
+
+  const slides = [
+    { text: t('carousel.1'), image: img1 },
+    { text: t('carousel.2'), image: img2 },
+    { text: t('carousel.3'), image: img3 },
+    { text: t('carousel.4'), image: img4 },
+    { text: t('carousel.5'), image: img5 },
+    { text: t('carousel.6'), image: img6 },
+    { text: t('carousel.7'), image: img7 },
+  ];
+
   const settings = {
     dots: true,
     infinite: true,
