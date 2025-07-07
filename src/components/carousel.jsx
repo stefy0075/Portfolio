@@ -2,35 +2,26 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+// Import de imágenes desde src/assets
+import img1 from '../assets/1.png';
+import img2 from '../assets/2.png';
+import img3 from '../assets/3.png';
+import img4 from '../assets/4.png';
+import img5 from '../assets/5.png';
+import img6 from '../assets/6.png';
+import img7 from '../assets/7.png';
+
 const slides = [
-  {
-    text: 'Desarrollo de sitios web modernos y responsivos.',
-    image: '/src/assets/2.png',
-  },
-  {
-    text: 'Soluciones personalizadas para cada necesidad.',
-    image: '/src/assets/1.png',
-  },
-  {
-    text: 'Aplicaciones móviles intuitivas y funcionales.',
-    image: '/src/assets/3.png',
-  },
+  { text: 'Desarrollo de sitios web modernos y responsivos.', image: img2 },
+  { text: 'Soluciones personalizadas para cada necesidad.', image: img1 },
+  { text: 'Aplicaciones móviles intuitivas y funcionales.', image: img3 },
   {
     text: 'Interfaces atractivas y diseño centrado en el usuario.',
-    image: '/src/assets/4.png',
+    image: img4,
   },
-  {
-    text: 'Optimización de rendimiento y velocidad.',
-    image: '/src/assets/5.png',
-  },
-  {
-    text: 'Integración de APIs y servicios externos.',
-    image: '/src/assets/6.png',
-  },
-  {
-    text: 'Mantenimiento y soporte continuo.',
-    image: '/src/assets/7.png',
-  },
+  { text: 'Optimización de rendimiento y velocidad.', image: img5 },
+  { text: 'Integración de APIs y servicios externos.', image: img6 },
+  { text: 'Mantenimiento y soporte continuo.', image: img7 },
 ];
 
 const Carousel = () => {
@@ -63,14 +54,9 @@ const Carousel = () => {
         ))}
       </Slider>
 
-      {/* Contenedor de los dots fuera del slide */}
-      <div className="absolute bottom-0 w-full h-[10vh] flex items-center justify-center z-50">
-        <div className="slick-dots-container">
-          {/* Este div es donde slick inyecta automáticamente los dots */}
-        </div>
-      </div>
+      {/* Contenedor para separar los dots */}
+      <div className="absolute bottom-0 w-full h-[10vh] flex items-center justify-center z-50" />
 
-      {/* CSS para forzar que los dots se vean dentro del espacio de 10vh */}
       <style>
         {`
           .slick-dots {
