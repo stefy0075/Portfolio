@@ -19,19 +19,19 @@ function AboutAs() {
           </div>
         </div>
         <div className="lg:w-[60%] w-[100%] flex flex-col justify-center items-center h-[100%] pt-[3%]">
-          <h1 className="text-white w-[90%] text-xl lg:text-3xl mb-[2rem] font-bold text-center">
+          <h1 className="text-black w-[90%] text-xl lg:text-3xl mb-[2rem] font-bold text-center">
             {t("aboutAs.sectionThree.1")}
           </h1>
-          <p className="text-white m-[1rem] mb-[1rem] text-sm lg:text-lg">
+          <p className="text-black m-[1rem] mb-[1rem] text-sm lg:text-lg">
             {t("aboutAs.sectionThree.2")}
           </p>
-          <p className="text-white m-[1rem] mb-[1rem] text-sm lg:text-lg">
+          <p className="text-black m-[1rem] mb-[1rem] text-sm lg:text-lg">
             {t("aboutAs.sectionThree.3")}
           </p>
-          <p className="text-white m-[1rem] mb-[1rem] text-sm lg:text-lg">
+          <p className="text-black m-[1rem] mb-[1rem] text-sm lg:text-lg">
             {t("aboutAs.sectionThree.4")}
           </p>
-          <p className="text-white m-[1rem] mb-[1rem] text-sm lg:text-lg">
+          <p className="text-black m-[1rem] mb-[1rem] text-sm lg:text-lg">
             {t("aboutAs.sectionThree.5")}
           </p>
         </div>

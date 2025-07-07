@@ -1,57 +1,77 @@
 import { useTranslation } from "react-i18next";
 import Grafic2 from "../components/grafic2";
+import Carousel from "../components/carousel";
 import computer from "../assets/computer.svg";
+import { motion } from "framer-motion";
 import "./bg.css";
 
 function App() {
   const { t } = useTranslation();
   const solutions = t("solutions", { returnObjects: true });
+
   return (
-    <>
-      <div className="min-h-screen">
-        <div className="min-h-screen flex lg:flex-row-reverse flex-col css-about justify-center items-center">
-          <div className="h-[100%] w-[100%]  lg:w-[50%] lg:my-[7%] my-[3%] flex justify-center items-center">
-            <img
-              className="lg:h-[90%] pt-[2rem] lg:pt-[0rem] h-[50%] w-[50%]"
-              src={computer}
-              alt="Computer"
-            />
-          </div>
-          <div className="h-[100%] w-[100%] lg:w-[50%] my-[3%] lg:my-[0%] flex flex-col pt-[3%]">
-            <h1 className="text-white font-bold text-xl lg:text-3xl text-center mb-[0.5em]">
-              {t("titleHome")}
-            </h1>
-            <h2 className="text-white text-sm lg:text-lg mr-[1rem] ml-[2rem] lg:leading-7 leading-5 lg:text-justify tracking-wide ">
-              {t("presentation")}
-            </h2>
-          </div>
+   <main className="min-h-[100vh] w-full overflow-x-hidden mt-[2rem]">
+      <section className="w-full h-[calc(100vh-4rem)] shadow-xl overflow-hidden">
+        <Carousel />
+      </section>
+<section className="w-full min-h-screen flex flex-col-reverse border-2 border-blue lg:flex-row items-center justify-center px-6 py-10 bg-secondary gap-6 lg:gap-12">
+  {/* Texto animado */}
+      <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ amount: 0.5 }} // Se activa cuando el 50% entra en viewport
+      className="w-full lg:w-[55%] space-y-5 text-center lg:text-left max-w-3xl"
+    >
+      <h1 className="text-primary font-bold text-3xl lg:text-4xl">
+        {t("titleHome")}
+      </h1>
+      <p className="text-gray-800 text-base lg:text-lg leading-relaxed">
+        {t("presentation")}
+      </p>
+    </motion.div>
+
+        {/* Imagen animada */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        viewport={{ amount: 0.5 }}
+        className="w-full lg:w-[45%] flex justify-center"
+      >
+        <img
+          src={computer}
+          alt="Computer"
+          className="w-[80%] max-w-md object-contain rounded-xl drop-shadow-xl"
+        />
+      </motion.div>
+      </section>
+
+      {/* Sección de soluciones */}
+      <section className="w-full min-h-screen bg-quaternary text-black flex flex-col lg:flex-row items-center justify-center px-6 py-12 gap-8">
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <Grafic2 />
         </div>
-        <div className="min-h-screen flex lg:flex-row flex-col bg-quaternary flex-wrap items-center justify-center ">
-          <div className="w-[100%] lg:w-[45%] pt-[3%] lg:pl-[3%] pl-[5%] flex items-center justify-center">
-            <Grafic2 />
-          </div>
-          <div className="w-[90%] flex flex-col justify-center items-center lg:w-[55%] pl-[1.5rem] lg:pl-[0rem] p-[1%] lg:pr-[3%]">
-            <h2 className="text-white font-bold text-xl lg:text-3xl text-center m-1 lg:m-[1.5rem] pb-[1.5rem]">
-              {t("subtitleHome")}
-            </h2>
-            <p className="text-white text-sm lg:text-lg mb-[2rem]">
-              {t("descriptionHome")}
-            </p>
-            <ul className="list-disc text-white text-sm lg:text-lg">
-              {solutions.map((item, index) => (
-                <li key={index} className="pl-4 mb-[0.7rem]">
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <p className="text-white text-sm lg:text-lg mt-[2.5rem] mb-[2.5em]">
-              {t("descriptionHomeFinal")}
-            </p>
-          </div>
+        <div className="w-full lg:w-1/2">
+          <h2 className="font-bold text-2xl lg:text-4xl text-center mb-6">
+            {t("subtitleHome")}
+          </h2>
+          <p className="text-base lg:text-lg mb-6 text-center lg:text-left">
+            {t("descriptionHome")}
+          </p>
+          <ul className="list-disc pl-6 text-base lg:text-lg space-y-3">
+            {solutions.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+          <p className="text-base lg:text-lg mt-6 text-center lg:text-left">
+            {t("descriptionHomeFinal")}
+          </p>
         </div>
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
 
 export default App;
+
