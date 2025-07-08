@@ -1,86 +1,121 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import logo from "../assets/Logo.ico";
-import world from "../assets/world.png";
+import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import logo from '../assets/Logo.ico';
+import world from '../assets/world.png';
+
 const Navbar = () => {
-  const [isLanguageMenuOpen, setLanguageMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-    setLanguageMenuOpen(false);
+  const [currentLang, setCurrentLang] = useState(i18n.language);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    // Agregue el listener inmediatamente para forzar una verificación inicial
+    handleScroll(); // Verificación inicial
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setCurrentLang(lang);
   };
-  let Links = [
-    { name: t("home"), link: "/#" },
-    { name: t("about"), link: "/about-me" },
-    { name: t("projects"), link: "/projects" },
-    { name: t("contact"), link: "/contact" },
-    { name: t("skills"), link: "/skills" },
+
+  const Links = [
+    { name: t('home'), link: '#home' },
+    { name: t('about'), link: '#about' },
+    { name: t('projects'), link: '#projects' },
+    { name: t('contact'), link: '#contact' },
+    { name: t('skills'), link: '#skills' },
   ];
-  let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-lg w-full h-[2.20rem] sticky bg-tertiary z-50 top-0 left-0">
-      <div className="lg:flex flex items-center justify-between bg-tertiary py-4 lg:px-10">
-        <div className="flex flex-row items-center lg:pl-0 pl-7 gap-1">
-            <img className="h-[2em] px-1 md:p-0 logo-e" src={logo} alt="Logo" />
-            <div className="flex flex-col justify-center">
-              <h1 className="text-white text-[15px] cssh1 font-bold text-center">
-                Eliana Guarino
-              </h1>
-              <h2 className="text-white text-[12px] md:text-[9px] ">
-                Full-Stack (MERN) & Mobile
-              </h2>
-            </div>
-          </div>
-        <div
-          onClick={() => setOpen(!open)}
-          className="text-2xl text-white absolute right-8 top-center cursor-pointer lg:hidden"
+    <nav
+      className={`fixed w-full z-50 backdrop-blur-sm h-16 shadow-lg transition-all duration-300 ${
+        scrolled
+          ? 'bg-[rgba(17,24,39,0.95)]' // Más oscuro al scrollear
+          : 'bg-[rgba(26, 27, 31, 0.79)]' // Más transparente al inicio
+      }`}
+    >
+      <div className="flex items-center justify-between h-full px-3 lg:px-10 max-w-15xl mx-auto">
+        {/* Logo y nombre */}
+        <a
+          href="#home"
+          className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+          onClick={() => setOpen(false)}
         >
-          <ion-icon name={open ? "close" : "menu"}></ion-icon>
-        </div>
+          <img className="h-8" src={logo} alt="Logo" />
+          <div className="flex flex-col">
+            <h1 className="text-white text-sm font-bold">Stefani Guarino</h1>
+            <h2 className="text-white text-xs">Full-Stack (MERN) & Mobile</h2>
+          </div>
+        </a>
 
+        {/* Menú hamburguesa */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="text-2xl text-white lg:hidden focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          {open ? '✕' : '☰'}
+        </button>
+
+        {/* Menú de navegación */}
         <ul
-          className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static bg-tertiary lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-20" : "top-[-490px]"
+          className={`lg:flex lg:items-center lg:space-x-6 absolute lg:static left-0 w-full lg:w-auto ${
+            scrolled
+              ? 'lg:bg-[rgba(17, 24, 39, 0)]'
+              : 'lg:bg-[rgba(17, 24, 39, 0)]'
+          } mt-16 lg:mt-0 transition-all duration-300 ease-in-out ${
+            open
+              ? 'top-0 opacity-100 bg-[rgba(17, 24, 39, 0)]'
+              : 'top-[-490px] opacity-0 lg:opacity-100 pointer-events-none lg:pointer-events-auto'
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="lg:ml-4 text-lg lg:my-0 my-2">
-              <Link
-                to={link.link}
-                className="text-white hover:text-gray-400 duration-500"
+            <li
+              key={link.name}
+              className="border-b border-gray-700/50 lg:border-none"
+            >
+              <a
+                href={link.link}
+                className="block py-3 px-6 text-white hover:text-gray-300 lg:py-1 transition-colors"
+                onClick={() => setOpen(false)}
               >
                 {link.name}
-              </Link>
+              </a>
             </li>
           ))}
-          <div className="flex lg:ml-8 text-lg lg:my-0 my-3 items-center lg:ml-[2rem]">
-        {!isLanguageMenuOpen && (
-          <span className="text-white text-sm font-bold mr-2 flex items-center">
-            {t("language")}:
-          </span>
-        )}
-        {isLanguageMenuOpen && (
-          <div className="language-menu flex text-white text-sm  flex-col">
-            <button onClick={() => changeLanguage("es")}>Spanish</button>
-            <button onClick={() => changeLanguage("en")}>English</button>
-            <button onClick={() => changeLanguage("it")}>Italian</button>
-          </div>
-        )}
-        {!isLanguageMenuOpen && (
-          <img
-            className="h-[2rem]"
-            src={world}
-            alt="Logo"
-            onClick={() => setLanguageMenuOpen(!isLanguageMenuOpen)}
-          />
-        )}
-      </div>
+
+          {/* Selector de idioma */}
+          <li className="flex items-center gap-2 px-6 py-3 lg:py-0 lg:ml-6">
+            <img src={world} alt="World" className="h-5" />
+            <select
+              onChange={(e) => changeLanguage(e.target.value)}
+              value={currentLang}
+              className={`bg-transparent text-white border ${
+                scrolled ? 'border-white/90' : 'border-white/50'
+              } rounded px-2 py-1 text-sm focus:outline-none transition-colors`}
+            >
+              <option value="es" className="bg-[rgba(17,24,39,0.95)]">
+                {t('languages.es')}
+              </option>
+              <option value="en" className="bg-[rgba(17,24,39,0.95)]">
+                {t('languages.en')}
+              </option>
+              <option value="it" className="bg-[rgba(17,24,39,0.95)]">
+                {t('languages.it')}
+              </option>
+            </select>
+          </li>
         </ul>
       </div>
-      
-    </div>
+    </nav>
   );
 };
 

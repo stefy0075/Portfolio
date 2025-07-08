@@ -47,5 +47,10 @@
     "5": "Performance and speed optimization.",
     "6": "API integration and external services.",
     "7": "Continuous maintenance and support."
+  },
+  "languages": {
+    "es": "Spanish",
+    "en": "English",
+    "it": "Italian"
   }
 }

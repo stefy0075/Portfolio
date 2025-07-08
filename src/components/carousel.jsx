@@ -39,7 +39,7 @@ const Carousel = () => {
     <div className="w-full h-[100vh] relative overflow-hidden bg-black">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="w-full h-[90vh] relative">
+          <div key={index} className="w-full h-[100vh] relative">
             <img
               src={slide.image}
               alt={`slide-${index}`}

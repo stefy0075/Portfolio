@@ -5,10 +5,7 @@ export default {
       scale: ['hover'],
     },
   },
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -21,10 +18,9 @@ export default {
         septenary: '#5B388A',
         octary: '#46326E',
         nonary: '#DCCAFF',
-        decennial: '#5B48A4'
+        decennial: '#5B48A4',
       },
     },
   },
   plugins: [],
 };
-

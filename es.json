@@ -47,5 +47,10 @@
     "5": "Optimización de rendimiento y velocidad.",
     "6": "Integración de APIs y servicios externos.",
     "7": "Mantenimiento y soporte continuo."
+  },
+  "languages": {
+    "es": "Español",
+    "en": "Inglés",
+    "it": "Italiano"
   }
 }
