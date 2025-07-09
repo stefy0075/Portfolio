@@ -52,5 +52,38 @@
     "es": "Spanish",
     "en": "English",
     "it": "Italian"
+  },
+  "hero": {
+    "title": "Custom digital solutions development",
+    "subtitle": "Design, technology and creativity to boost your ideas",
+    "projects": "View projects",
+    "contact": "Contact me"
+  },
+  "welcome": {
+    "title": "Welcome to my portfolio",
+    "subtitle": "Digital solutions tailored for you",
+    "description": "I’m a Full Stack MERN developer, building digital experiences that combine design, performance and functionality. I work with people and brands looking for modern, efficient, and creative web solutions.",
+    "cta": "Learn more about me"
+  },
+  "bannerServices": {
+    "web": {
+      "title": "Tailored digital solutions"
+    },
+    "design": {
+      "title": "Modern, functional and attractive design"
+    },
+    "performance": {
+      "title": "Speed, efficiency and guaranteed quality"
+    },
+    "support": {
+      "title": "Ongoing support and integrated technology"
+    }
+  },
+  "heroSection": {
+    "name": "Eliana Guarino",
+    "role": "Full-Stack Developer | MERN & Mobile Applications",
+    "presentation": "I am a <0>Full-Stack</0> developer specialized in the <1>MERN</1> stack and <2>mobile applications</2>. I combine strong technical knowledge with a results-driven approach. I focus on deeply understanding <3>client needs</3> to deliver high-quality products.",
+    "projectsButton": "View my projects",
+    "contactButton": "Contact me"
   }
 }

@@ -52,5 +52,38 @@
     "es": "Spagnolo",
     "en": "Inglese",
     "it": "Italiano"
+  },
+  "hero": {
+    "title": "Sviluppo di soluzioni digitali su misura",
+    "subtitle": "Design, tecnologia e creatività per dare vita alle tue idee",
+    "projects": "Guarda i progetti",
+    "contact": "Contattami"
+  },
+  "welcome": {
+    "title": "Benvenuto nel mio portfolio",
+    "subtitle": "Soluzioni digitali su misura per te",
+    "description": "Sono una sviluppatrice Full Stack MERN e creo esperienze digitali personalizzate che uniscono design, prestazioni e funzionalità. Lavoro con persone e brand che cercano soluzioni web moderne, efficienti e creative.",
+    "cta": "Scopri di più su di me"
+  },
+  "bannerServices": {
+    "web": {
+      "title": "Soluzioni digitali su misura"
+    },
+    "design": {
+      "title": "Design moderno, funzionale e accattivante"
+    },
+    "performance": {
+      "title": "Velocità, efficienza e qualità garantita"
+    },
+    "support": {
+      "title": "Supporto continuo e tecnologia integrata"
+    }
+  },
+  "heroSection": {
+    "name": "Eliana Guarino",
+    "role": "Sviluppatrice Full-Stack | MERN & Applicazioni Mobili",
+    "presentation": "Sono una sviluppatrice <0>Full-Stack</0> specializzata nello stack <1>MERN</1> e nelle <2>applicazioni mobili</2>. Unisco una solida competenza tecnica a un approccio orientato ai risultati. Mi concentro sulla comprensione profonda delle <3>esigenze del cliente</3> per offrire prodotti di alta qualità.",
+    "projectsButton": "Guarda i miei progetti",
+    "contactButton": "Contattami"
   }
 }
