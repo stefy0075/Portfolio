@@ -29,11 +29,11 @@ const Navbar = () => {
   };
 
   const Links = [
-    { name: t('home'), link: '#home' },
-    { name: t('about'), link: '#about' },
-    { name: t('projects'), link: '#projects' },
-    { name: t('contact'), link: '#contact' },
-    { name: t('skills'), link: '#skills' },
+    { name: t('home'), link: '/' },
+    { name: t('about'), link: '/about' },
+    { name: t('projects'), link: '/projects' },
+    { name: t('contact'), link: '/contact' },
+    { name: t('skills'), link: '/skills' },
   ];
 
   return (

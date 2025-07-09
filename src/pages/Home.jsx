@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { CheckIcon } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
 import './bg.css';
@@ -9,7 +9,7 @@ import img2 from '../assets/2.png';
 import img3 from '../assets/3.png';
 import img4 from '../assets/4.png';
 
-function App() {
+function Home() {
   const { t } = useTranslation();
   const solutions = t('solutions', { returnObjects: true });
 
@@ -39,13 +39,13 @@ function App() {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="#projects"
+              href="projects"
               className="bg-primary text-white px-5 py-2 rounded hover:bg-opacity-80 transition"
             >
               {t('hero.projects')}
             </a>
             <a
-              href="#contact"
+              href="contact"
               className="border border-white text-white px-4 py-2 rounded hover:bg-white hover:text-black transition"
             >
               {t('hero.contact')}
@@ -83,7 +83,7 @@ function App() {
 
         <div>
           <a
-            href="#about"
+            href="about"
             className="bg-primary text-white px-6 py-3 rounded-md font-semibold transition duration-300 hover:bg-secondary"
           >
             {t('welcome.cta')}
@@ -109,47 +109,6 @@ function App() {
             </div>
           );
         })}
-      </section>
-
-      {/* Sección Presentación - Estilo Hero */}
-      <section className="w-full min-h-screen bg-gradient-to-br from-primary/10 to-secondary flex flex-col items-center justify-center px-6 py-20 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
-        >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
-            {t('heroSection.name')}
-          </h1>
-
-          <div className="w-20 h-1 bg-accent mx-auto mb-8"></div>
-
-          <h2 className="text-xl md:text-2xl text-gray-700 mb-8">
-            {t('heroSection.role')}
-          </h2>
-
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto">
-            <Trans
-              i18nKey="heroSection.presentation"
-              components={[
-                <strong key="0" />,
-                <strong key="1" />,
-                <strong key="2" />,
-                <strong key="3" />,
-              ]}
-            />
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-4">
-            <button className="px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all">
-              {t('heroSection.projectsButton')}
-            </button>
-            <button className="px-8 py-3 border-2 border-primary text-primary rounded-lg hover:bg-primary/10 transition-all">
-              {t('heroSection.contactButton')}
-            </button>
-          </div>
-        </motion.div>
       </section>
 
       {/* Sección de Soluciones - Estilo Moderno */}
@@ -207,9 +166,12 @@ function App() {
                 <p className="text-lg text-gray-700 mb-8">
                   {t('descriptionHomeFinal')}
                 </p>
-                <button className="px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all">
-                  Conoce mis proyectos
-                </button>
+                <a
+                  href="projects"
+                  className="bg-primary text-white px-5 py-2 rounded hover:bg-opacity-80 transition"
+                >
+                  {t('hero.projects')}
+                </a>
               </motion.div>
             </div>
           </div>
@@ -219,4 +181,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
