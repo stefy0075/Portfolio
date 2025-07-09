@@ -14,16 +14,18 @@ const Navbar = () => {
       setScrolled(window.scrollY > 10);
     };
 
-    // Agregue el listener inmediatamente para forzar una verificación inicial
-    handleScroll(); // Verificación inicial
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
-
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
     setCurrentLang(lang);
+  };
+
+  const handleLinkClick = () => {
+    setOpen(false); // Cierra el menú al hacer clic en cualquier enlace
   };
 
   const Links = [
@@ -37,9 +39,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 backdrop-blur-sm h-16 shadow-lg transition-all duration-300 ${
-        scrolled
-          ? 'bg-[rgba(17,24,39,0.95)]' // Más oscuro al scrollear
-          : 'bg-[rgba(26, 27, 31, 0.79)]' // Más transparente al inicio
+        scrolled ? 'bg-[rgba(17,24,39,0.95)]' : 'bg-[rgba(26,27,31,0.79)]'
       }`}
     >
       <div className="flex items-center justify-between h-full px-3 lg:px-10 max-w-15xl mx-auto">
@@ -51,7 +51,7 @@ const Navbar = () => {
         >
           <img className="h-8" src={logo} alt="Logo" />
           <div className="flex flex-col">
-            <h1 className="text-white text-sm font-bold">Stefani Guarino</h1>
+            <h1 className="text-white text-sm font-bold">Eliana Guarino</h1>
             <h2 className="text-white text-xs">Full-Stack (MERN) & Mobile</h2>
           </div>
         </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* Menú hamburguesa */}
         <button
           onClick={() => setOpen(!open)}
-          className="text-2xl text-white lg:hidden focus:outline-none"
+          className="text-2xl text-white lg:hidden focus:outline-none mr-4"
           aria-label="Toggle menu"
         >
           {open ? '✕' : '☰'}
@@ -67,15 +67,12 @@ const Navbar = () => {
 
         {/* Menú de navegación */}
         <ul
-          className={`lg:flex lg:items-center lg:space-x-6 absolute lg:static left-0 w-full lg:w-auto ${
-            scrolled
-              ? 'lg:bg-[rgba(17, 24, 39, 0)]'
-              : 'lg:bg-[rgba(17, 24, 39, 0)]'
-          } mt-16 lg:mt-0 transition-all duration-300 ease-in-out ${
+          className={`lg:flex lg:items-center lg:space-x-6 fixed lg:static right-0 top-16 w-3/4 lg:w-auto bg-[rgba(17,24,39,0.95)] lg:bg-transparent mt-0 lg:mt-0 transition-all duration-300 ease-in-out ${
             open
-              ? 'top-0 opacity-100 bg-[rgba(17, 24, 39, 0)]'
-              : 'top-[-490px] opacity-0 lg:opacity-100 pointer-events-none lg:pointer-events-auto'
+              ? 'translate-x-0 opacity-100'
+              : 'translate-x-full lg:translate-x-0 opacity-0 lg:opacity-100 pointer-events-none lg:pointer-events-auto'
           }`}
+          style={{ height: 'calc(100vh - 4rem)' }}
         >
           {Links.map((link) => (
             <li
@@ -84,8 +81,8 @@ const Navbar = () => {
             >
               <a
                 href={link.link}
-                className="block py-3 px-6 text-white hover:text-gray-300 lg:py-1 transition-colors"
-                onClick={() => setOpen(false)}
+                className="block py-4 px-6 text-white hover:bg-gray-800/50 transition-colors"
+                onClick={handleLinkClick}
               >
                 {link.name}
               </a>
@@ -93,12 +90,15 @@ const Navbar = () => {
           ))}
 
           {/* Selector de idioma */}
-          <li className="flex items-center gap-2 px-6 py-3 lg:py-0 lg:ml-6">
+          <li className="flex items-center gap-2 px-6 py-4 lg:py-0 lg:ml-6">
             <img src={world} alt="World" className="h-5" />
             <select
-              onChange={(e) => changeLanguage(e.target.value)}
+              onChange={(e) => {
+                changeLanguage(e.target.value);
+                handleLinkClick();
+              }}
               value={currentLang}
-              className={`bg-transparent text-white border ${
+              className={`bg-[rgba(17,24,39,0.95)] text-white border ${
                 scrolled ? 'border-white/90' : 'border-white/50'
               } rounded px-2 py-1 text-sm focus:outline-none transition-colors`}
             >
