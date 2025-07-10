@@ -3,8 +3,7 @@ import react from '@vitejs/plugin-react';
 import process from 'process';
 
 export default defineConfig(({ mode }) => {
-  // Cargar variables de entorno - método correcto en Vite
-  const env = loadEnv(mode, process.cwd(), ''); // El tercer parámetro vacío carga todas las variables
+  const env = loadEnv(mode, process.cwd(), '');
 
   return {
     plugins: [react()],
@@ -18,6 +17,5 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-    // Elimina cualquier referencia a process.env aquí
   };
 });
