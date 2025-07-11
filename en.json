@@ -1,58 +1,16 @@
 {
-  "language": "English",
+  "Nav": "Section NavBar",
   "home": "Home",
   "about": "About Me",
   "projects": "Projects",
   "contact": "Contact",
   "skills": "Skills",
-  "titleHome": "My Portfolio",
-  "presentation": "As a Full-Stack developer specialized in MERN (MongoDB, Express, React and Node.js) and mobile applications, I am constantly looking to improve my skills and keep myself updated with the latest technologies. My focus is on guaranteeing excellence in every project and ensuring quality in the final products. Thanks to my ability to analyze and understand the client's needs, I am able to provide solutions tailored to each challenge. I take pride in developing innovative and high quality solutions that exceed customer expectations.",
-  "subtitleHome": "Power your success with customized solutions!",
-  "descriptionHome": "I can offer you a wide range of customized services to suit your needs. Here are some ways in which I can contribute to your success:",
-  "solutions": [
-    "Web and mobile development: creation of websites, mobile applications, and e-commerce platforms.",
-    "Attractive Design: Modern-looking and aesthetically pleasing interfaces to improve the user's experience.",
-    "Performance Optimization: Improving speed and efficiency for optimal performance.",
-    "API integration: Connecting with external services to improve functionality.",
-    "Maintenance and support: Technical assistance, upgrades and continuous improvements."
-  ],
-  "descriptionHomeFinal": "I am committed to exceeding your expectations and providing you with innovative, high quality technology solutions. Let's work together to take your vision to the next level!",
-  "contactH1": "Contact me and let's make your project a reality!",
-  "contactDescription": "Complete the contact form below and I will get back to you as soon as possible. Your inquiry is important to me, and I am committed to providing you with excellent service. With my experience in web and mobile development, beautiful design, performance optimization, API integration, maintenance and support, I can offer you complete and reliable solutions. Don't wait any longer! Let me know how I can help you boost your success. I'm eager to work with you and bring your ideas to life. Together, we can create something amazing.",
-  "contactForm": {
-    "title": "Contact Form",
-    "name": "First name",
-    "email": "E-mail",
-    "mesaje": "Message",
-    "button": "Send"
-  },
-  "aboutAs": {
-    "sectionThree": {
-      "1": "Professional Approach",
-      "2": "My approach is based on technical excellence and meticulous attention to detail. I strive to create intuitive and engaging interfaces, providing a seamless and immersive user experience. In addition, I value efficiency and performance optimization, implementing good development practices and ensuring that my solutions are robust and secure.",
-      "3": "With a holistic approach to full-stack development, I can tackle projects from initial planning to implementation and final deployment. I am experienced in working in collaborative teams and adapting quickly to changing project requirements, always maintaining high quality standards and meeting deadlines.",
-      "4": "My passion for programming and desire to keep up to date with the latest trends and technologies drive me to keep learning and constantly improving. My goal is to deliver innovative and efficient solutions that drive the success of the projects I am involved in and provide tangible value to end users.",
-      "5": "I am excited to continue expanding my experience and challenging myself with new projects and opportunities in the field of Full-Stack MERN & Mobile development, bringing creative solutions and contributing to technological growth in the digital world."
-    }
-  },
-  "skillOne": "Technical programming skills",
-  "skillThree": "Management skills and methodologies",
-  "proyectsOne": "Web Projects",
-  "proyectsTwo": "Mobile Projects",
-  "carousel": {
-    "1": "Development of modern and responsive websites.",
-    "2": "Custom solutions tailored to every need.",
-    "3": "Intuitive and functional mobile applications.",
-    "4": "Attractive interfaces and user-centered design.",
-    "5": "Performance and speed optimization.",
-    "6": "API integration and external services.",
-    "7": "Continuous maintenance and support."
-  },
   "languages": {
     "es": "Spanish",
     "en": "English",
     "it": "Italian"
   },
+  "Home": "Section Home",
   "hero": {
     "title": "Custom digital solutions development",
     "subtitle": "Design, technology and creativity to boost your ideas",
@@ -79,11 +37,27 @@
       "title": "Ongoing support and integrated technology"
     }
   },
-  "heroSection": {
-    "name": "Eliana Guarino",
-    "role": "Full-Stack Developer | MERN & Mobile Applications",
-    "presentation": "I am a <0>Full-Stack</0> developer specialized in the <1>MERN</1> stack and <2>mobile applications</2>. I combine strong technical knowledge with a results-driven approach. I focus on deeply understanding <3>client needs</3> to deliver high-quality products.",
-    "projectsButton": "View my projects",
-    "contactButton": "Contact me"
+  "solutions": {
+    "title": "Tailored Technological Solutions",
+    "subtitle": "Developing innovative solutions that adapt to your specific needs.",
+    "solutionsTips": [
+      "Web and mobile development: Creation of websites, mobile applications, and e-commerce platforms.",
+      "Attractive design: Modern and pleasant interfaces that enhance user experience.",
+      "Performance optimization: Speed and efficiency improvements for optimal performance.",
+      "API integration: Connection with external services to expand functionality.",
+      "Maintenance and support: Technical assistance, updates, and continuous improvements."
+    ],
+    "closing": "I am committed to exceeding your expectations and providing you with innovative, high-quality technological solutions. Let’s work together to take your vision to the next level!"
+  },
+  "ctaFinal": {
+    "title": "Do you want to ask me something?",
+    "subtitle": "I'm interested in understanding your needs and your opinion. I want you to be involved in every step of the process so I can deliver a truly tailored solution for you.",
+    "button": "Contact me"
+  },
+  "footer": {
+    "tel": "Phone:",
+    "email": "Email:",
+    "description": "Development and design of personalized digital solutions, focused on boosting your online presence through technology, creativity, and commitment.",
+    "networks": "My networks"
   }
 }

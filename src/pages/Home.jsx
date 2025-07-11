@@ -8,10 +8,11 @@ import img1 from '../assets/1.png';
 import img2 from '../assets/2.png';
 import img3 from '../assets/3.png';
 import img4 from '../assets/4.png';
+import ctaFinal from '../assets/ctafinal.jpg';
 
 function Home() {
   const { t } = useTranslation();
-  const solutions = t('solutions', { returnObjects: true });
+  const solutions = t('solutions.solutionsTips', { returnObjects: true });
 
   return (
     <main className="min-h-[100vh] w-full overflow-x-hidden ">
@@ -46,7 +47,7 @@ function Home() {
             </a>
             <a
               href="contact"
-              className="border border-white text-white px-4 py-2 rounded hover:bg-white hover:text-black transition"
+              className="border border-white text-white px-4 py-2 rounded hover:bg-secondary hover:text-black transition"
             >
               {t('hero.contact')}
             </a>
@@ -84,7 +85,7 @@ function Home() {
         <div>
           <a
             href="about"
-            className="bg-primary text-white px-6 py-3 rounded-md font-semibold transition duration-300 hover:bg-secondary"
+            className="bg-primary text-white px-6 py-3 rounded-md font-semibold transition duration-300 hover:text-black hover:bg-secondary"
           >
             {t('welcome.cta')}
           </a>
@@ -116,12 +117,11 @@ function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Soluciones Tecnológicas a Medida
+              {t('solutions.title')}
             </h2>
             <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Desarrollo soluciones innovadoras que se adaptan a tus necesidades
-              específicas
+              {t('solutions.subtitle')}
             </p>
           </div>
 
@@ -164,7 +164,7 @@ function Home() {
                 className="pt-6"
               >
                 <p className="text-lg text-gray-700 mb-8">
-                  {t('descriptionHomeFinal')}
+                  {t('solutions.closing')}
                 </p>
                 <a
                   href="projects"
@@ -175,6 +175,44 @@ function Home() {
               </motion.div>
             </div>
           </div>
+        </div>
+      </section>
+      {/* CTA Final */}
+      <section
+        className="relative bg-cover bg-center bg-no-repeat py-24 px-6 text-white"
+        style={{ backgroundImage: `url(${ctaFinal})` }}
+        id="ctaFinal"
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-4xl font-bold mb-6"
+          >
+            {t('ctaFinal.title')}
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-lg md:text-xl text-white mb-10"
+          >
+            {t('ctaFinal.subtitle')}
+          </motion.p>
+
+          <motion.a
+            href="/contact"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-secondary hover:text-black transition"
+          >
+            {t('ctaFinal.button')}
+          </motion.a>
         </div>
       </section>
     </main>

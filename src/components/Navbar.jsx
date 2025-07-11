@@ -45,12 +45,12 @@ const Navbar = () => {
       <div className="flex items-center justify-between h-full px-3 lg:px-10 max-w-15xl mx-auto">
         {/* Logo y nombre */}
         <a
-          href="#home"
+          href="/"
           className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           onClick={() => setOpen(false)}
         >
           <img className="h-8" src={logo} alt="Logo" />
-          <div className="flex flex-col">
+          <div className="flex flex-col pl-2 border-l border-white/20">
             <h1 className="text-white text-sm font-bold">Eliana Guarino</h1>
             <h2 className="text-white text-xs">Full-Stack (MERN) & Mobile</h2>
           </div>

@@ -1,58 +1,17 @@
 {
-  "language": "Español",
+  "Nav": "Seccion NavBar",
   "home": "Inicio",
   "about": "Sobre Mi",
   "projects": "Proyectos",
   "contact": "Contacto",
   "skills": "Habilidades",
-  "titleHome": "Mi Portafolio",
-  "presentation": "Como desarrolladora Full-Stack especializada en MERN (MongoDB, Express, React y Node.js) y aplicaciones móviles, busco constantemente mejorar mis habilidades y mantenerme actualizada con las últimas tecnologías. Mi enfoque se centra en garantizar la excelencia en cada proyecto y asegurar la calidad en los productos finales. Gracias a mi capacidad para analizar y comprender las necesidades del cliente, puedo ofrecer soluciones personalizadas y adaptadas a cada desafío. Me enorgullece desarrollar soluciones innovadoras y de alta calidad que superen las expectativas de los clientes.",
-  "subtitleHome": "¡Potencia tu éxito con soluciones a medida!",
-  "descriptionHome": "Puedo ofrecerte una amplia gama de servicios personalizados que se adaptan a tus necesidades. Aquí hay algunas formas en las que puedo contribuir a tu éxito:",
-  "solutions": [
-    "Desarrollo web y móvil: Creación de sitios web, aplicaciones móviles, y plataformas de comercio electrónico.",
-    "Diseño atractivo: Interfaces modernas y agradables que mejoran la experiencia del usuario.",
-    "Optimización de rendimiento: Mejora de velocidad y eficiencia para un óptimo rendimiento.",
-    "Integración de API: Conexión con servicios externos para ampliar la funcionalidad.",
-    "Mantenimiento y soporte: Asistencia técnica, actualizaciones y mejoras continuas."
-  ],
-  "descriptionHomeFinal": "Estoy comprometida en superar tus expectativas y en ofrecerte soluciones tecnológicas innovadoras y de alta calidad. ¡Trabajemos juntos para llevar tu visión al siguiente nivel!",
-  "contactH1": "¡Contáctame y hagamos realidad tu proyecto!",
-  "contactDescription": "Completa el formulario de contacto a continuación y te responderé a la brevedad. Tu consulta es importante para mí, y estoy comprometida en brindarte un excelente servicio. Con mi experiencia en desarrollo web y móvil, diseño atractivo, optimización de rendimiento, integración de API, mantenimiento y soporte, puedo ofrecerte soluciones completas y confiables. ¡No esperes más! Déjame saber cómo puedo ayudarte a potenciar tu éxito. Estoy ansiosa por trabajar contigo y hacer realidad tus ideas. Juntos, podemos crear algo increíble.",
-  "contactForm": {
-    "title": "Formulario de contacto",
-    "name": "Nombre Completo",
-    "email": "Correo electrónico",
-    "mesaje": "Mensaje",
-    "button": "Enviar"
-  },
-  "aboutAs": {
-    "sectionThree": {
-      "1": "Enfoque Profesional",
-      "2": "Mi enfoque se basa en la excelencia técnica y la atención meticulosa a los detalles. Me esfuerzo por crear interfaces intuitivas y atractivas, brindando una experiencia de usuario fluida y envolvente. Además, valoro la eficiencia y la optimización del rendimiento, implementando buenas prácticas de desarrollo y asegurándome de que mis soluciones sean sólidas y seguras.",
-      "3": "Con un enfoque integral en el desarrollo full-stack, puedo abordar proyectos desde la planificación inicial hasta la implementación y el despliegue final. Tengo experiencia en trabajar en equipos colaborativos y adaptarme rápidamente a los requisitos cambiantes del proyecto, siempre manteniendo altos estándares de calidad y cumpliendo con los plazos establecidos.",
-      "4": "Mi pasión por la programación y el deseo de mantenerme actualizada con las últimas tendencias y tecnologías me impulsan a seguir aprendiendo y mejorando constantemente. Mi objetivo es ofrecer soluciones innovadoras y eficientes que impulsen el éxito de los proyectos en los que participo y brinden valor tangible a los usuarios finales.",
-      "5": "Estoy entusiasmada por seguir expandiendo mi experiencia y desafiándome con nuevos proyectos y oportunidades en el campo del desarrollo Full-Stack MERN & Mobile, aportando soluciones creativas y contribuyendo al crecimiento tecnológico en el mundo digital."
-    }
-  },
-  "skillOne": "Habilidades técnicas de programación",
-  "skillThree": "Habilidades de gestión y metodologías",
-  "proyectsOne": "Proyectos Web",
-  "proyectsTwo": "Proyectos Mobiles",
-  "carousel": {
-    "1": "Desarrollo de sitios web modernos y responsivos.",
-    "2": "Soluciones personalizadas para cada necesidad.",
-    "3": "Aplicaciones móviles intuitivas y funcionales.",
-    "4": "Interfaces atractivas y diseño centrado en el usuario.",
-    "5": "Optimización de rendimiento y velocidad.",
-    "6": "Integración de APIs y servicios externos.",
-    "7": "Mantenimiento y soporte continuo."
-  },
   "languages": {
     "es": "Español",
     "en": "Inglés",
     "it": "Italiano"
   },
+
+  "Home": "Seccion Home",
   "hero": {
     "title": "Desarrollo soluciones digitales a medida",
     "subtitle": "Diseño, tecnología y creatividad para impulsar tus ideas",
@@ -79,11 +38,27 @@
       "title": "Acompañamiento continuo y tecnología integrada"
     }
   },
-  "heroSection": {
-    "name": "Eliana Guarino",
-    "role": "Desarrolladora Full-Stack | MERN & Aplicaciones Móviles",
-    "presentation": "Soy desarrolladora <0>Full-Stack</0> especializada en el stack <1>MERN</1> y en <2>aplicaciones móviles</2>. Combino conocimientos técnicos sólidos con un enfoque orientado a resultados. Me enfoco en comprender a fondo las <3>necesidades del cliente</3> para entregar productos de alta calidad.",
-    "projectsButton": "Ver mis proyectos",
-    "contactButton": "Contactarme"
+  "solutions": {
+    "title": "Soluciones Tecnológicas a Medida",
+    "subtitle": "Desarrollo soluciones innovadoras que se adaptan a tus necesidades específicas.",
+    "solutionsTips": [
+      "Desarrollo web y móvil: Creación de sitios web, aplicaciones móviles, y plataformas de comercio electrónico.",
+      "Diseño atractivo: Interfaces modernas y agradables que mejoran la experiencia del usuario.",
+      "Optimización de rendimiento: Mejora de velocidad y eficiencia para un óptimo rendimiento.",
+      "Integración de API: Conexión con servicios externos para ampliar la funcionalidad.",
+      "Mantenimiento y soporte: Asistencia técnica, actualizaciones y mejoras continuas."
+    ],
+    "closing": "Me comprometo a superar tus expectativas y brindarte soluciones tecnológicas innovadoras y de alta calidad. ¡Trabajemos juntos para llevar tu visión al siguiente nivel!"
+  },
+  "ctaFinal": {
+    "title": "¿Necesitás hacerme una consulta?",
+    "subtitle": "Me interesa conocer tus necesidades y tu opinión. Quiero que participes en cada detalle del proceso para poder ofrecerte una solución realmente a medida.",
+    "button": "Contactame"
+  },
+  "footer": {
+    "tel": "Tel:",
+    "email": "Email:",
+    "description": "Desarrollo y diseño de soluciones digitales personalizadas, orientadas a potenciar tu presencia en línea con tecnología, creatividad y compromiso.",
+    "networks": "Mis redes"
   }
 }
