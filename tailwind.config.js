@@ -10,10 +10,9 @@ export default {
     extend: {
       colors: {
         primary: '#000f7d',
-        secondary: '#f4f6fc', // Gris claro
+        secondary: '#e0e0e0ff', // Gris claro
         accent: '#d1be87',
-        //secondary: '#f4f6fc',
-        tertiary: '#313f48',
+        tertiary: '#1d2431',
         quaternary: '#f0f3f5',
         quintary: '#7957BC',
         sextary: '#233dff',

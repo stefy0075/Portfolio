@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const { t } = useTranslation();
-  const emailLink = 'mailto:guarinoeliana@gmail.com';
+  const emailLink = 'mailto:dev.elianaguarino@gmail.com';
 
   return (
     <footer className="bg-tertiary text-white px-4 py-10 ">
@@ -59,7 +59,7 @@ const Footer = () => {
             <Link to="https://github.com/stefy0075" target="_blank">
               <img className="h-[2rem] w-[2rem]" src={github} alt="GitHub" />
             </Link>
-            <Link to="https://wa.link/cnuwq7" target="_blank">
+            <Link to="https://wa.link/iean78" target="_blank">
               <img
                 className="h-[2rem] w-[2rem]"
                 src={whatsapp}
