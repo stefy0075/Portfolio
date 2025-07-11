@@ -59,5 +59,98 @@
     "email": "Email:",
     "description": "Sviluppo e design di soluzioni digitali personalizzate, mirate a potenziare la tua presenza online con tecnologia, creatività e impegno.",
     "networks": "Le mie reti"
+  },
+  "aboutAs": {
+    "title": "Chi Sono",
+    "subtitle": "Scopri il mio percorso professionale e competenze",
+    "sectionThree": {
+      "1": "Approccio Professionale",
+      "2": "Specializzata nella creazione di interfacce intuitive con attenzione meticolosa ai dettagli. Do priorità a prestazioni, sicurezza e migliori pratiche di sviluppo.",
+      "3": "Esperienza full-stack: dalla concezione al deployment. Adattabilità a requisiti variabili mantenendo alti standard qualitativi.",
+      "4": "Appassionata di innovazione tecnologica. Apprendimento continuo per offrire soluzioni efficienti e all'avanguardia.",
+      "5": "Focalizzata nel fornire valore tangibile attraverso sviluppo strategico e creativo."
+    },
+    "strengthsTitle": "Il Mio Valore Aggiunto",
+    "strengthsSubtitle": "Pilastri fondamentali del mio approccio professionale",
+    "strengths": {
+      "tech": {
+        "title": "Competenze Tecniche",
+        "description": "Padronanza di MERN Stack e sviluppo mobile per soluzioni robuste"
+      },
+      "ux": {
+        "title": "Focus UX",
+        "description": "Design centrato sull'utente per esperienze intuitive"
+      },
+      "performance": {
+        "title": "Ottimizzazione",
+        "description": "Applicazioni veloci, efficienti e scalabili"
+      },
+      "communication": {
+        "title": "Collaborazione",
+        "description": "Comunicazione chiara e lavoro di squadra efficace"
+      }
+    },
+    "ctaTitle": "Pronto a iniziare il tuo progetto?",
+    "ctaDescription": "Sono disponibile per lavori freelance e collaborazioni",
+    "ctaButton": "Contattami"
+  },
+
+  "contactH1": "Realizziamo il tuo progetto",
+  "contactDescription": "Compila il modulo e ti risponderò al più presto.",
+  "contactForm": {
+    "title": "Modulo di Contatto",
+    "subtitle": "Hai un progetto in mente? Inviami un messaggio e ti risponderò presto.",
+    "name": "Nome e Cognome",
+    "email": "Indirizzo Email",
+    "message": "Come posso aiutarti?",
+    "button": "Invia Messaggio"
+  },
+  "contactInfo": {
+    "addressTitle": "Indirizzo",
+    "address": "Buenos Aires, Argentina",
+    "phoneTitle": "Telefono",
+    "phone": "+54 11 51527077",
+    "emailTitle": "Email",
+    "email": "dev.elianaguarino@gmail.com"
+  },
+  "proyectos": {
+    "heroTitle": "I Miei Progetti",
+    "heroSubtitle": "Una vetrina dei miei migliori lavori e competenze tecniche",
+    "titulo": "Progetti Principali",
+    "subtitulo": "Ecco alcuni dei miei progetti più significativi che dimostrano le mie competenze ed esperienza.",
+    "patitasDescripcion": "E-commerce per animali domestici con carrello e autenticazione utente",
+    "amazingDescripcion": "Piattaforma eventi con filtri avanzati e gestione contenuti",
+    "mingaDescripcion": "Social network educativo che connette studenti e insegnanti",
+    "odisseyDescripcion": "Sistema di prenotazione viaggi con integrazione pagamenti",
+    "calculadoraDescripcion": "Applicazione calcolatrice con funzioni avanzate e design responsive",
+    "ctaTitle": "Vuoi lavorare insieme?",
+    "ctaSubtitle": "Se ti sono piaciuti i miei progetti e vuoi collaborare, non esitare a contattarmi.",
+    "ctaButton": "Contattami"
+  },
+  "habilidades": {
+    "titulo": "Le Mie Competenze",
+    "subtitulo": "Competenze tecniche e gestionali acquisite durante la mia carriera",
+    "tecnico": "Competenze Tecniche",
+    "gestion": "Competenze Gestionali",
+    "listaTecnicas": [
+      "React & React Native",
+      "JavaScript (ES6+)",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "RESTful APIs",
+      "HTML5 & CSS3",
+      "Tailwind CSS",
+      "Next.js",
+      "Git & GitHub"
+    ],
+    "listaGestion": [
+      "Metodologie Agile",
+      "Scrum",
+      "Lavoro di Squadra",
+      "Gestione Progetti",
+      "Comunicazione Efficace",
+      "Problem Solving"
+    ]
   }
 }

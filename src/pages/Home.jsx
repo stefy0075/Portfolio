@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { CheckIcon } from '@heroicons/react/24/solid';
 import { motion } from 'framer-motion';
-import './bg.css';
 import Grafic2 from '../components/grafic2';
 import bgHero from '../assets/bgHero.png';
 import img1 from '../assets/1.png';

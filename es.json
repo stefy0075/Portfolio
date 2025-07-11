@@ -60,5 +60,99 @@
     "email": "Email:",
     "description": "Desarrollo y diseño de soluciones digitales personalizadas, orientadas a potenciar tu presencia en línea con tecnología, creatividad y compromiso.",
     "networks": "Mis redes"
+  },
+
+  "aboutAs": {
+    "title": "Sobre Mí",
+    "subtitle": "Conoce mi trayectoria profesional y experiencia",
+    "sectionThree": {
+      "1": "Enfoque Profesional",
+      "2": "Especializada en crear interfaces intuitivas con atención meticulosa al detalle. Priorizo rendimiento, seguridad y mejores prácticas de desarrollo.",
+      "3": "Experiencia full-stack: desde la concepción hasta el despliegue. Adaptabilidad a requisitos cambiantes manteniendo altos estándares de calidad.",
+      "4": "Apasionada por la innovación tecnológica. Aprendizaje continuo para ofrecer soluciones eficientes y vanguardistas.",
+      "5": "Enfoque en entregar valor tangible mediante desarrollo estratégico y creativo."
+    },
+    "strengthsTitle": "Mi Valor Diferencial",
+    "strengthsSubtitle": "Pilares fundamentales de mi enfoque profesional",
+    "strengths": {
+      "tech": {
+        "title": "Experiencia Técnica",
+        "description": "Dominio de MERN Stack y desarrollo móvil para soluciones robustas"
+      },
+      "ux": {
+        "title": "Enfoque UX",
+        "description": "Diseño centrado en el usuario para experiencias intuitivas"
+      },
+      "performance": {
+        "title": "Optimización",
+        "description": "Aplicaciones rápidas, eficientes y escalables"
+      },
+      "communication": {
+        "title": "Colaboración",
+        "description": "Comunicación clara y trabajo en equipo efectivo"
+      }
+    },
+    "ctaTitle": "¿Listo para comenzar tu proyecto?",
+    "ctaDescription": "Estoy disponible para trabajos freelance y colaboraciones",
+    "ctaButton": "Contáctame"
+  },
+  "contactH1": "Hablemos de tu proyecto",
+  "contactDescription": "Completa el formulario y te responderé a la brevedad.",
+  "contactForm": {
+    "title": "Formulario de Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Envíame un mensaje y te responderé pronto.",
+    "name": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "message": "¿En qué puedo ayudarte?",
+    "button": "Enviar Mensaje"
+  },
+  "contactInfo": {
+    "addressTitle": "Ubicación",
+    "address": "Buenos Aires, Argentina",
+    "phoneTitle": "Teléfono",
+    "phone": "+54 11 51527077",
+    "emailTitle": "Email",
+    "email": "dev.elianaguarino@gmail.com"
+  },
+
+  "proyectos": {
+    "heroTitle": "Mis Proyectos",
+    "heroSubtitle": "Una muestra de mi mejor trabajo y habilidades técnicas",
+    "titulo": "Proyectos Destacados",
+    "subtitulo": "Estos son algunos de mis proyectos más significativos que demuestran mis habilidades y experiencia.",
+    "patitasDescripcion": "E-commerce para mascotas con carrito de compras y autenticación de usuarios",
+    "amazingDescripcion": "Plataforma de eventos con filtros avanzados y administración de contenido",
+    "mingaDescripcion": "Red social educativa con interacción entre estudiantes y profesores",
+    "odisseyDescripcion": "Sistema de reservas de viajes con integración de pagos",
+    "calculadoraDescripcion": "Aplicación de calculadora con funciones avanzadas y diseño responsive",
+    "ctaTitle": "¿Quieres trabajar juntos?",
+    "ctaSubtitle": "Si te gustaron mis proyectos y quieres colaborar, no dudes en contactarme.",
+    "ctaButton": "Contáctame"
+  },
+  "habilidades": {
+    "titulo": "Mis Habilidades",
+    "subtitulo": "Habilidades técnicas y de gestión que he adquirido a lo largo de mi carrera",
+    "tecnico": "Habilidades Técnicas",
+    "gestion": "Habilidades de Gestión",
+    "listaTecnicas": [
+      "React & React Native",
+      "JavaScript (ES6+)",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "RESTful APIs",
+      "HTML5 & CSS3",
+      "Tailwind CSS",
+      "Next.js",
+      "Git & GitHub"
+    ],
+    "listaGestion": [
+      "Metodologías Ágiles",
+      "Scrum",
+      "Trabajo en Equipo",
+      "Gestión de Proyectos",
+      "Comunicación Efectiva",
+      "Resolución de Problemas"
+    ]
   }
 }

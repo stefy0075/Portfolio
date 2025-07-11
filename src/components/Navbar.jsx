@@ -33,7 +33,6 @@ const Navbar = () => {
     { name: t('about'), link: '/about' },
     { name: t('projects'), link: '/projects' },
     { name: t('contact'), link: '/contact' },
-    { name: t('skills'), link: '/skills' },
   ];
 
   return (

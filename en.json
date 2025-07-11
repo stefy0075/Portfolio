@@ -59,5 +59,98 @@
     "email": "Email:",
     "description": "Development and design of personalized digital solutions, focused on boosting your online presence through technology, creativity, and commitment.",
     "networks": "My networks"
+  },
+  "aboutAs": {
+    "title": "About Me",
+    "subtitle": "Discover my professional journey and expertise",
+    "sectionThree": {
+      "1": "Professional Approach",
+      "2": "Specialized in creating intuitive interfaces with meticulous attention to detail. I prioritize performance, security, and development best practices.",
+      "3": "Full-stack experience: from conception to deployment. Adaptability to changing requirements while maintaining high quality standards.",
+      "4": "Passionate about technological innovation. Continuous learning to deliver cutting-edge, efficient solutions.",
+      "5": "Focused on delivering tangible value through strategic and creative development."
+    },
+    "strengthsTitle": "My Value Proposition",
+    "strengthsSubtitle": "Core pillars of my professional approach",
+    "strengths": {
+      "tech": {
+        "title": "Technical Expertise",
+        "description": "MERN Stack and mobile development mastery for robust solutions"
+      },
+      "ux": {
+        "title": "UX Focus",
+        "description": "User-centered design for intuitive experiences"
+      },
+      "performance": {
+        "title": "Optimization",
+        "description": "Fast, efficient and scalable applications"
+      },
+      "communication": {
+        "title": "Collaboration",
+        "description": "Clear communication and effective teamwork"
+      }
+    },
+    "ctaTitle": "Ready to start your project?",
+    "ctaDescription": "I'm available for freelance work and collaborations",
+    "ctaButton": "Contact Me"
+  },
+
+  "contactH1": "Let's talk about your project",
+  "contactDescription": "Fill out the form and I’ll get back to you shortly.",
+  "contactForm": {
+    "title": "Contact Form",
+    "subtitle": "Do you have a project in mind? Send me a message and I’ll reply soon.",
+    "name": "Full Name",
+    "email": "Email Address",
+    "message": "How can I help you?",
+    "button": "Send Message"
+  },
+  "contactInfo": {
+    "addressTitle": "Location",
+    "address": "Buenos Aires, Argentina",
+    "phoneTitle": "Phone",
+    "phone": "+54 11 51527077",
+    "emailTitle": "Email",
+    "email": "dev.elianaguarino@gmail.com"
+  },
+  "proyectos": {
+    "heroTitle": "My Projects",
+    "heroSubtitle": "A showcase of my best work and technical skills",
+    "titulo": "Featured Projects",
+    "subtitulo": "Here are some of my most significant projects that demonstrate my skills and experience.",
+    "patitasDescripcion": "E-commerce for pets with shopping cart and user authentication",
+    "amazingDescripcion": "Event platform with advanced filters and content management",
+    "mingaDescripcion": "Educational social network connecting students and teachers",
+    "odisseyDescripcion": "Travel booking system with payment integration",
+    "calculadoraDescripcion": "Calculator application with advanced functions and responsive design",
+    "ctaTitle": "Want to work together?",
+    "ctaSubtitle": "If you liked my projects and want to collaborate, don't hesitate to contact me.",
+    "ctaButton": "Contact Me"
+  },
+  "habilidades": {
+    "titulo": "My Skills",
+    "subtitulo": "Technical and management skills I've acquired throughout my career",
+    "tecnico": "Technical Skills",
+    "gestion": "Management Skills",
+    "listaTecnicas": [
+      "React & React Native",
+      "JavaScript (ES6+)",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "RESTful APIs",
+      "HTML5 & CSS3",
+      "Tailwind CSS",
+      "Next.js",
+      "Git & GitHub"
+    ],
+    "listaGestion": [
+      "Agile Methodologies",
+      "Scrum",
+      "Teamwork",
+      "Project Management",
+      "Effective Communication",
+      "Problem Solving"
+    ]
   }
 }
