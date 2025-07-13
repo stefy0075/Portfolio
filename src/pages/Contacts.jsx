@@ -6,11 +6,41 @@ const ContactForm = () => {
   const { t } = useTranslation();
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    // Lógica para enviar el formulario
-  };
 
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/contact`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            user_name: form.current.user_name.value,
+            user_email: form.current.user_email.value,
+            user_phone: form.current.user_phone.value,
+            prefers_whatsapp: form.current.prefers_whatsapp.checked,
+            message: form.current.message.value,
+          }),
+        }
+      );
+
+      const data = await response.json(); // Añade esta línea
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Error en la respuesta del servidor');
+      }
+
+      alert('Mensaje enviado con éxito');
+      form.current.reset();
+    } catch (error) {
+      console.error('Error completo:', error);
+      alert(`Error al enviar: ${error.message}`);
+    }
+  };
+  // Lógica para enviar el formulario
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section con imagen de fondo */}
