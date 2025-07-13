@@ -6,7 +6,7 @@ import amazing from '../assets/amazing.jpg';
 import petshop from '../assets/petshop.jpg';
 import Minga from '../assets/Minga.png';
 import Odissey from '../assets/Odissey.jpg';
-import ctaBackground from '../assets/ctaSection.png';
+import ctaBackground from '../assets/ctaSection.avif';
 import Calculadora from '../assets/calculadora.jpg';
 import bgHero from '../assets/heroProject.png';
 

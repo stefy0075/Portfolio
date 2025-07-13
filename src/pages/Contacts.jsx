@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useRef } from 'react';
-import bgHero from '../assets/heroContact.jpeg';
+import bgHero from '../assets/heroContact.png';
 
 const ContactForm = () => {
   const { t } = useTranslation();
@@ -180,6 +180,8 @@ const ContactForm = () => {
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
                   required
                   minLength={2}
+                  title="Solo se permiten letras (mayúsculas o minúsculas)"
+                  placeholder="Ingresa tu nombre"
                 />
               </div>
 
@@ -196,6 +198,7 @@ const ContactForm = () => {
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
                   required
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  placeholder="ejemplo@ejemplo.com"
                 />
               </div>
 
