@@ -1,22 +1,28 @@
 import { useTranslation } from 'react-i18next';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import bgHero from '../assets/heroContact.png';
+import PropTypes from 'prop-types';
 
 const ContactForm = () => {
   const { t } = useTranslation();
   const form = useRef();
+  // Estado para loading
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const sendEmail = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000);
+
       const response = await fetch(
         `${import.meta.env.VITE_API_URL}/api/contact`,
         {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             user_name: form.current.user_name.value,
             user_email: form.current.user_email.value,
@@ -24,22 +30,71 @@ const ContactForm = () => {
             prefers_whatsapp: form.current.prefers_whatsapp.checked,
             message: form.current.message.value,
           }),
+          signal: controller.signal,
         }
       );
 
-      const data = await response.json(); // Añade esta línea
+      clearTimeout(timeoutId);
 
       if (!response.ok) {
-        throw new Error(data.error || 'Error en la respuesta del servidor');
+        throw new Error('Error en la respuesta del servidor');
       }
 
-      alert('Mensaje enviado con éxito');
       form.current.reset();
+      setIsSubmitted(true); // Activa el estado de envío exitoso
     } catch (error) {
-      console.error('Error completo:', error);
-      alert(`Error al enviar: ${error.message}`);
+      console.error('Error:', error);
+      let errorMessage = 'Error al enviar el mensaje';
+
+      if (error.name === 'AbortError') {
+        errorMessage = 'La solicitud tardó demasiado. Intenta nuevamente.';
+      } else if (error.message.includes('Failed to fetch')) {
+        errorMessage = 'Problema de conexión. Verifica tu internet.';
+      }
+
+      alert(`✗ ${errorMessage}`);
+    } finally {
+      setIsSubmitting(false);
     }
   };
+
+  const SuccessMessage = ({ onNewMessage }) => (
+    <div className="bg-white p-8 rounded-lg shadow-lg text-center animate-fade-in">
+      <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
+        <svg
+          className="h-8 w-8 text-green-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+      </div>
+      <h3 className="text-2xl font-bold text-gray-800 mb-3">
+        ¡Mensaje enviado con éxito!
+      </h3>
+      <div className="text-gray-600 space-y-2">
+        <p>Gracias por contactarte conmigo.</p>
+        <p>A la brevedad estaré comunicándome contigo.</p>
+        <p>¡Gracias por tu paciencia!</p>
+      </div>
+      <button
+        onClick={onNewMessage}
+        className="mt-6 bg-primary hover:bg-primary-dark text-white font-medium py-2 px-6 rounded-lg transition-colors"
+      >
+        Enviar otro mensaje
+      </button>
+    </div>
+  );
+  SuccessMessage.propTypes = {
+    onNewMessage: PropTypes.func.isRequired,
+  };
+
   // Lógica para enviar el formulario
   return (
     <div className="min-h-screen bg-white">
@@ -166,100 +221,142 @@ const ContactForm = () => {
             <div className="w-16 h-1 bg-accent mb-6"></div>
             <p className="text-gray-600 mb-8">{t('contactForm.subtitle')}</p>
 
-            <form ref={form} onSubmit={sendEmail} className="space-y-6">
-              {/* Campo Nombre (obligatorio) */}
-              <div>
-                <label htmlFor="name" className="block text-gray-700 mb-1">
-                  {t('contactForm.name')}{' '}
-                  <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="user_name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
-                  required
-                  minLength={2}
-                  title="Solo se permiten letras (mayúsculas o minúsculas)"
-                  placeholder="Ingresa tu nombre"
-                />
-              </div>
-
-              {/* Campo Email (obligatorio) */}
-              <div>
-                <label htmlFor="email" className="block text-gray-700 mb-1">
-                  {t('contactForm.email')}{' '}
-                  <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="user_email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
-                  required
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  placeholder="ejemplo@ejemplo.com"
-                />
-              </div>
-
-              {/* Campo Teléfono/WhatsApp (obligatorio) */}
-              <div>
-                <label htmlFor="phone" className="block text-gray-700 mb-1">
-                  Teléfono/WhatsApp <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="user_phone"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
-                  required
-                  pattern="[0-9]{9,15}"
-                  title="Por favor ingresa un número válido (9-15 dígitos)"
-                  placeholder="Incluye código de país"
-                />
-              </div>
-
-              {/* Campo WhatsApp (opcional) */}
-              <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="whatsapp"
-                  name="prefers_whatsapp"
-                  className="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
-                />
-                <label htmlFor="whatsapp" className="ml-2 block text-gray-700">
-                  Prefiero contacto por WhatsApp
-                </label>
-              </div>
-
-              {/* Campo Mensaje (obligatorio) */}
-              <div>
-                <label htmlFor="message" className="block text-gray-700 mb-1">
-                  {t('contactForm.message')}{' '}
-                  <span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
-                  required
-                  minLength={10}
-                  placeholder="Describe tu proyecto o consulta"
-                ></textarea>
-              </div>
-
-              <p className="text-sm text-gray-500 ">
-                <span className="text-red-500">*</span> Campos obligatorios
-              </p>
-
-              <button
-                type="submit"
-                className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-3 px-4 rounded-lg transition-colors mt-2"
+            {isSubmitted ? (
+              <SuccessMessage onNewMessage={() => setIsSubmitted(false)} />
+            ) : (
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className="space-y-6"
+                disabled={isSubmitting}
               >
-                {t('contactForm.button')}
-              </button>
-            </form>
+                {/* Campo Nombre (obligatorio) */}
+                <div>
+                  <label htmlFor="name" className="block text-gray-700 mb-1">
+                    {t('contactForm.name')}{' '}
+                    <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="user_name"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
+                    required
+                    minLength={2}
+                    pattern="[A-Za-zÁ-ú\s]+"
+                    title="Solo se permiten letras y espacios (mayúsculas o minúsculas)"
+                    placeholder="Ingresa tu nombre"
+                  />
+                </div>
+
+                {/* Campo Email (obligatorio) */}
+                <div>
+                  <label htmlFor="email" className="block text-gray-700 mb-1">
+                    {t('contactForm.email')}{' '}
+                    <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="user_email"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    placeholder="ejemplo@ejemplo.com"
+                  />
+                </div>
+
+                {/* Campo Teléfono/WhatsApp (obligatorio) */}
+                <div>
+                  <label htmlFor="phone" className="block text-gray-700 mb-1">
+                    Teléfono/WhatsApp <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="user_phone"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
+                    required
+                    pattern="[0-9]{9,15}"
+                    title="Por favor ingresa un número válido (9-15 dígitos)"
+                    placeholder="Incluye código de país"
+                  />
+                </div>
+
+                {/* Campo WhatsApp (opcional) */}
+                <div className="flex items-center">
+                  <input
+                    type="checkbox"
+                    id="whatsapp"
+                    name="prefers_whatsapp"
+                    className="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
+                  />
+                  <label
+                    htmlFor="whatsapp"
+                    className="ml-2 block text-gray-700"
+                  >
+                    Prefiero contacto por WhatsApp
+                  </label>
+                </div>
+
+                {/* Campo Mensaje (obligatorio) */}
+                <div>
+                  <label htmlFor="message" className="block text-gray-700 mb-1">
+                    {t('contactForm.message')}{' '}
+                    <span className="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
+                    required
+                    minLength={10}
+                    placeholder="Describe tu proyecto o consulta"
+                  ></textarea>
+                </div>
+
+                <p className="text-sm text-gray-500 ">
+                  <span className="text-red-500">*</span> Campos obligatorios
+                </p>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className={`w-full bg-primary text-white font-medium py-3 px-4 rounded-lg mt-2 transition-all ${
+                    isSubmitting
+                      ? 'opacity-70 cursor-not-allowed'
+                      : 'hover:bg-primary-dark hover:shadow-md'
+                  }`}
+                >
+                  {isSubmitting ? (
+                    <span className="flex items-center justify-center">
+                      <svg
+                        className="animate-spin h-5 w-5 mr-2"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        />
+                      </svg>
+                      Enviando...
+                    </span>
+                  ) : (
+                    t('contactForm.button')
+                  )}
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </div>
