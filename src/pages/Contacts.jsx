@@ -76,18 +76,18 @@ const ContactForm = () => {
         </svg>
       </div>
       <h3 className="text-2xl font-bold text-gray-800 mb-3">
-        ¡Mensaje enviado con éxito!
+        {t('formSuccess.title')}
       </h3>
       <div className="text-gray-600 space-y-2">
-        <p>Gracias por contactarte conmigo.</p>
-        <p>A la brevedad estaré comunicándome contigo.</p>
-        <p>¡Gracias por tu paciencia!</p>
+        <p>{t('formSuccess.message1')}</p>
+        <p>{t('formSuccess.message2')}</p>
+        <p>{t('formSuccess.message3')}</p>
       </div>
       <button
         onClick={onNewMessage}
         className="mt-6 bg-primary hover:bg-primary-dark text-white font-medium py-2 px-6 rounded-lg transition-colors"
       >
-        Enviar otro mensaje
+        {t('formSuccess.button')}
       </button>
     </div>
   );
@@ -244,8 +244,8 @@ const ContactForm = () => {
                     required
                     minLength={2}
                     pattern="[A-Za-zÁ-ú\s]+"
-                    title="Solo se permiten letras y espacios (mayúsculas o minúsculas)"
-                    placeholder="Ingresa tu nombre"
+                    title={t('formValidation.nameTitle')}
+                    placeholder={t('formPlaceholders.name')}
                   />
                 </div>
 
@@ -262,14 +262,16 @@ const ContactForm = () => {
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
                     required
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    placeholder="ejemplo@ejemplo.com"
+                    placeholder={t('formPlaceholders.email')}
+                    title={t('formValidation.emailTitle')}
                   />
                 </div>
 
                 {/* Campo Teléfono/WhatsApp (obligatorio) */}
                 <div>
                   <label htmlFor="phone" className="block text-gray-700 mb-1">
-                    Teléfono/WhatsApp <span className="text-red-500">*</span>
+                    {t('formFields.phoneLabel')}{' '}
+                    <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="tel"
@@ -278,8 +280,8 @@ const ContactForm = () => {
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
                     required
                     pattern="[0-9]{9,15}"
-                    title="Por favor ingresa un número válido (9-15 dígitos)"
-                    placeholder="Incluye código de país"
+                    title={t('formValidation.phoneTitle')}
+                    placeholder={t('formPlaceholders.phone')}
                   />
                 </div>
 
@@ -295,7 +297,7 @@ const ContactForm = () => {
                     htmlFor="whatsapp"
                     className="ml-2 block text-gray-700"
                   >
-                    Prefiero contacto por WhatsApp
+                    {t('formFields.whatsappLabel')}
                   </label>
                 </div>
 
@@ -312,12 +314,14 @@ const ContactForm = () => {
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-gray-50"
                     required
                     minLength={10}
-                    placeholder="Describe tu proyecto o consulta"
+                    placeholder={t('formPlaceholders.message')}
+                    title={t('formValidation.messageTitle')}
                   ></textarea>
                 </div>
 
-                <p className="text-sm text-gray-500 ">
-                  <span className="text-red-500">*</span> Campos obligatorios
+                <p className="text-sm text-gray-500">
+                  <span className="text-red-500">*</span>{' '}
+                  {t('formValidation.requiredFields')}
                 </p>
 
                 <button
@@ -349,7 +353,7 @@ const ContactForm = () => {
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                         />
                       </svg>
-                      Enviando...
+                      {t('formStates.sending')}
                     </span>
                   ) : (
                     t('contactForm.button')

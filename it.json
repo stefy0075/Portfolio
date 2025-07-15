@@ -95,24 +95,6 @@
     "ctaButton": "Contattami"
   },
 
-  "contactH1": "Realizziamo il tuo progetto",
-  "contactDescription": "Compila il modulo e ti risponderò al più presto.",
-  "contactForm": {
-    "title": "Modulo di Contatto",
-    "subtitle": "Hai un progetto in mente? Inviami un messaggio e ti risponderò presto.",
-    "name": "Nome e Cognome",
-    "email": "Indirizzo Email",
-    "message": "Come posso aiutarti?",
-    "button": "Invia Messaggio"
-  },
-  "contactInfo": {
-    "addressTitle": "Indirizzo",
-    "address": "Buenos Aires, Argentina",
-    "phoneTitle": "Telefono",
-    "phone": "+54 11 51527077",
-    "emailTitle": "Email",
-    "email": "dev.elianaguarino@gmail.com"
-  },
   "proyectos": {
     "heroTitle": "I Miei Progetti",
     "heroSubtitle": "Una vetrina dei miei migliori lavori e competenze tecniche",
@@ -152,5 +134,54 @@
       "Comunicazione Efficace",
       "Problem Solving"
     ]
+  },
+
+  "contactH1": "Realizziamo il tuo progetto",
+  "contactDescription": "Compila il modulo e ti risponderò al più presto.",
+  "contactInfo": {
+    "addressTitle": "Ubicazione",
+    "address": "Buenos Aires, Argentina",
+    "phoneTitle": "Telefono",
+    "phone": "+54 11 51527077",
+    "emailTitle": "Email",
+    "email": "dev.elianaguarino@gmail.com"
+  },
+  "formPlaceholders": {
+    "phone": "Includi il prefisso internazionale",
+    "name": "Inserisci il tuo nome",
+    "email": "esempio@esempio.com",
+    "message": "Descrivi il tuo progetto o richiesta"
+  },
+  "formValidation": {
+    "nameTitle": "Sono ammesse solo lettere e spazi (maiuscole o minuscole)",
+    "emailTitle": "Per favore inserisci un indirizzo email valido",
+    "messageTitle": "Il messaggio deve contenere almeno 10 caratteri",
+    "phoneTitle": "Per favore inserisci un numero valido (9-15 cifre)",
+    "requiredFields": "Campi obbligatori"
+  },
+  "formSuccess": {
+    "title": "Messaggio inviato con successo!",
+    "message1": "Grazie per avermi contattato.",
+    "message2": "Ti risponderò al più presto.",
+    "message3": "Grazie per la tua pazienza!",
+    "button": "Invia un altro messaggio"
+  },
+  "contactForm": {
+    "title": "Modulo di Contatto",
+    "subtitle": "Hai un progetto in mente? Inviami un messaggio e ti risponderò presto.",
+    "name": "Nome Completo",
+    "email": "Email",
+    "message": "Come posso aiutarti?",
+    "button": "Invia Messaggio"
+  },
+  "formFields": {
+    "whatsappLabel": "Preferisco essere contattato via WhatsApp",
+    "phoneLabel": "Telefono/WhatsApp",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio"
+  },
+  "formStates": {
+    "sending": "Invio in corso..."
   }
 }

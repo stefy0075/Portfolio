@@ -96,24 +96,6 @@
     "ctaDescription": "Estoy disponible para trabajos freelance y colaboraciones",
     "ctaButton": "Contáctame"
   },
-  "contactH1": "Hablemos de tu proyecto",
-  "contactDescription": "Completa el formulario y te responderé a la brevedad.",
-  "contactForm": {
-    "title": "Formulario de Contacto",
-    "subtitle": "¿Tienes un proyecto en mente? Envíame un mensaje y te responderé pronto.",
-    "name": "Nombre Completo",
-    "email": "Correo Electrónico",
-    "message": "¿En qué puedo ayudarte?",
-    "button": "Enviar Mensaje"
-  },
-  "contactInfo": {
-    "addressTitle": "Ubicación",
-    "address": "Buenos Aires, Argentina",
-    "phoneTitle": "Teléfono",
-    "phone": "+54 11 51527077",
-    "emailTitle": "Email",
-    "email": "dev.elianaguarino@gmail.com"
-  },
 
   "proyectos": {
     "heroTitle": "Mis Proyectos",
@@ -129,6 +111,7 @@
     "ctaSubtitle": "Si te gustaron mis proyectos y quieres colaborar, no dudes en contactarme.",
     "ctaButton": "Contáctame"
   },
+
   "habilidades": {
     "titulo": "Mis Habilidades",
     "subtitulo": "Habilidades técnicas y de gestión que he adquirido a lo largo de mi carrera",
@@ -154,5 +137,54 @@
       "Comunicación Efectiva",
       "Resolución de Problemas"
     ]
+  },
+
+  "contactH1": "Hablemos de tu proyecto",
+  "contactDescription": "Completa el formulario y te responderé a la brevedad.",
+  "contactInfo": {
+    "addressTitle": "Ubicación",
+    "address": "Buenos Aires, Argentina",
+    "phoneTitle": "Teléfono",
+    "phone": "+54 11 51527077",
+    "emailTitle": "Email",
+    "email": "dev.elianaguarino@gmail.com"
+  },
+  "formPlaceholders": {
+    "phone": "Incluye código de país",
+    "name": "Ingresa tu nombre",
+    "email": "ejemplo@ejemplo.com",
+    "message": "Describe tu proyecto o consulta"
+  },
+  "formValidation": {
+    "nameTitle": "Solo se permiten letras y espacios (mayúsculas o minúsculas)",
+    "emailTitle": "Por favor ingresa un email válido",
+    "messageTitle": "El mensaje debe tener al menos 10 caracteres",
+    "phoneTitle": "Por favor ingresa un número válido (9-15 dígitos)",
+    "requiredFields": "Campos obligatorios"
+  },
+  "formSuccess": {
+    "title": "¡Mensaje enviado con éxito!",
+    "message1": "Gracias por contactarte conmigo.",
+    "message2": "A la brevedad estaré comunicándome contigo.",
+    "message3": "¡Gracias por tu paciencia!",
+    "button": "Enviar otro mensaje"
+  },
+  "contactForm": {
+    "title": "Formulario de Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Envíame un mensaje y te responderé pronto.",
+    "name": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "message": "¿En qué puedo ayudarte?",
+    "button": "Enviar Mensaje"
+  },
+  "formFields": {
+    "whatsappLabel": "Prefiero contacto por WhatsApp",
+    "phoneLabel": "Teléfono/WhatsApp",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje"
+  },
+  "formStates": {
+    "sending": "Enviando..."
   }
 }
