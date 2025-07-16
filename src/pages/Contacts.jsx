@@ -1,14 +1,22 @@
 import { useTranslation } from 'react-i18next';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import bgHero from '../assets/heroContact.png';
 import PropTypes from 'prop-types';
 
 const ContactForm = () => {
   const { t } = useTranslation();
   const form = useRef();
+
   // Estado para loading
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    // Ping al servidor cuando el componente se monta
+    fetch(`${import.meta.env.VITE_API_URL}/health`)
+      .then(() => console.log('Server awakened'))
+      .catch(console.error);
+  }, []);
 
   const sendEmail = async (e) => {
     e.preventDefault();
