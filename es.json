@@ -142,6 +142,7 @@
   "contactH1": "Hablemos de tu proyecto",
   "contactDescription": "Completa el formulario y te responderé a la brevedad.",
   "contactInfo": {
+    "title": "Información de Contacto",
     "addressTitle": "Ubicación",
     "address": "Buenos Aires, Argentina",
     "phoneTitle": "Teléfono",

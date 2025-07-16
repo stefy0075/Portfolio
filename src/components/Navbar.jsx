@@ -66,12 +66,15 @@ const Navbar = () => {
 
         {/* Menú de navegación */}
         <ul
-          className={`lg:flex lg:items-center lg:space-x-6 fixed lg:static right-0 top-16 w-3/4 lg:w-auto bg-[rgba(17,24,39,0.95)] lg:bg-transparent mt-0 lg:mt-0 transition-all duration-300 ease-in-out ${
+          className={`lg:flex lg:items-center lg:space-x-6 fixed lg:relative right-0 top-16 lg:top-0 w-3/4 lg:w-auto bg-[rgba(17,24,39,0.95)] lg:bg-transparent mt-0 transition-all duration-300 ease-in-out ${
             open
               ? 'translate-x-0 opacity-100'
               : 'translate-x-full lg:translate-x-0 opacity-0 lg:opacity-100 pointer-events-none lg:pointer-events-auto'
           }`}
-          style={{ height: 'calc(100vh - 4rem)' }}
+          style={{
+            height: 'calc(100vh - 4rem)',
+            maxHeight: 'none',
+          }}
         >
           {Links.map((link) => (
             <li

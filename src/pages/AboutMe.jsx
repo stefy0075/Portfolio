@@ -83,7 +83,7 @@ function AboutAs() {
       </div>
 
       {/* Sección de pilares/fortalezas */}
-      <section className="py-12">
+      <section className="py-12 px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             {t('aboutAs.strengthsTitle')}
@@ -101,7 +101,7 @@ function AboutAs() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="bg-gray-50 p-10 rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary mb-3">
                 {strength.title}

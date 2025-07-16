@@ -103,7 +103,6 @@ const ContactForm = () => {
     onNewMessage: PropTypes.func.isRequired,
   };
 
-  // Lógica para enviar el formulario
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section con imagen de fondo */}
@@ -126,103 +125,9 @@ const ContactForm = () => {
 
       {/* Sección principal de contenido */}
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Información de contacto */}
-          <div className="lg:w-1/2 space-y-8">
-            <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  {t('contactInfo.addressTitle')}
-                </h3>
-                <p className="text-gray-600">{t('contactInfo.address')}</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  {t('contactInfo.phoneTitle')}
-                </h3>
-                <p className="text-gray-600">{t('contactInfo.phone')}</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-6">
-              <div className="flex-shrink-0 mt-1">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  {t('contactInfo.emailTitle')}
-                </h3>
-                <p className="text-gray-600">
-                  <a
-                    href={`mailto:${t('contactInfo.email')}`}
-                    className="text-primary hover:underline"
-                  >
-                    {t('contactInfo.email')}
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-
+        <div className="flex flex-col lg:flex-row gap-20">
           {/* Formulario de contacto */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 lg:order-1">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
               {t('contactForm.title')}
             </h2>
@@ -369,6 +274,129 @@ const ContactForm = () => {
                 </button>
               </form>
             )}
+          </div>
+
+          {/* Información de contacto */}
+          <div className="lg:w-1/2 lg:order-2 space-y-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              {t('contactInfo.title')}
+            </h2>
+            <div className="w-16 h-1 bg-accent mb-6"></div>
+
+            <div className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-100">
+              <div className="flex items-start gap-6 mb-8">
+                <div className="flex-shrink-0 mt-1">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <svg
+                      className="w-6 h-6 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    {t('contactInfo.addressTitle')}
+                  </h3>
+                  <p className="text-gray-600">{t('contactInfo.address')}</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-6 mb-8">
+                <div className="flex-shrink-0 mt-1">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <svg
+                      className="w-6 h-6 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    {t('contactInfo.phoneTitle')}
+                  </h3>
+                  <p className="text-gray-600">
+                    <a
+                      href={`tel:${t('contactInfo.phone').replace(/\D/g, '')}`}
+                      className="hover:text-primary transition-colors"
+                    >
+                      {t('contactInfo.phone')}
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0 mt-1">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <svg
+                      className="w-6 h-6 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    {t('contactInfo.emailTitle')}
+                  </h3>
+                  <p className="text-gray-600">
+                    <a
+                      href={`mailto:${t('contactInfo.email')}`}
+                      className="text-primary hover:underline"
+                    >
+                      {t('contactInfo.email')}
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mapa opcional */}
+            <div className="mt-8">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                {t('contactInfo.addressTitle')}
+              </h3>
+              <div className="aspect-w-16 aspect-h-16 bg-gray-200 rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5863658467153!2d-58.83515421507099!3d-34.636504880456274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc945bc2149eff%3A0x72f476f24b92b3fa!2sMoreno%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1710530316464!5m2!1ses!2sar"
+                  className="w-full h-full"
+                  loading="lazy"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>

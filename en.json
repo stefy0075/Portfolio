@@ -139,6 +139,7 @@
   "contactH1": "Let's talk about your project",
   "contactDescription": "Fill out the form and I’ll get back to you shortly.",
   "contactInfo": {
+    "title": "Contact Information",
     "addressTitle": "Location",
     "address": "Buenos Aires, Argentina",
     "phoneTitle": "Phone",

@@ -139,6 +139,7 @@
   "contactH1": "Realizziamo il tuo progetto",
   "contactDescription": "Compila il modulo e ti risponderò al più presto.",
   "contactInfo": {
+    "title": "Informazioni di contatto",
     "addressTitle": "Ubicazione",
     "address": "Buenos Aires, Argentina",
     "phoneTitle": "Telefono",
